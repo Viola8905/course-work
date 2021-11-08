@@ -244,6 +244,12 @@ html,body{
     
    
 }
+@media screen and (min-width: 2300px) {
+    .container{
+        max-width: 2200px;
+        margin: 0 auto;
+    }
+}
 /* end of header css */
 
 .main{
