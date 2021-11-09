@@ -339,3 +339,17 @@ html,body{
     padding: 30px;
     text-align: center;
 }
+
+/* particles js */
+
+#particles-js{
+  overflow: hidden;
+	margin: 20px;
+  height: 100%;
+  background-color: #b9dfdf;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* end of particles js */
