@@ -200,6 +200,10 @@ html,body{
         justify-content: center;
 
         padding: 0;
+        height: 100%;
+      
+        background-color: rgb(255, 255, 255);
+        z-index: 100;
     }
     .sticky {
         background-color: transparent;
@@ -233,7 +237,7 @@ html,body{
         align-items: center;
         justify-content: center;
 
-        z-index: 5;
+        z-index: 1000;
 
         border-radius: 5px;
     }
@@ -266,10 +270,12 @@ html,body{
     .header__burger .line{
         width: 90%;
         position: relative;
+        
     }
 
     .header__burger.active .line{
         background-color: transparent;
+        
     }
 
     .header__burger.active .line::after,
@@ -281,25 +287,16 @@ html,body{
 
     .header__burger.active .line::after{
         transform: rotate(-45deg);
+       
     }
 
     .header__burger.active .line::before{
         transform: rotate(45deg);
-    }
-
-
-    .header__ul{
-        height: 100%;
-      
-        background-color: rgb(255, 255, 255);
-        
-        
-        
-        
-       
        
     }
 
+
+    
     
 
     .header__ul > li{
@@ -381,11 +378,12 @@ html,body{
     font-size: 30px;
     left: 5%;
     top: 11%;
-    z-index: 100;
+    z-index: 10;
+    line-height: 120%;
   
 }
 .zno__subItem{
-    z-index: 1000;
+    z-index: 10;
     font-weight: 700;
     
    
@@ -400,9 +398,10 @@ html,body{
 .zno__subRow{
     display: flex;
     flex-direction: column;
-    height: 70%;
-    justify-content: space-around;
-   margin: 0 3%;
+    height: 50%;
+    justify-content: space-between;
+    margin: 0 3%;
+    margin-top: 5%;
    
     
 }
@@ -414,14 +413,17 @@ html,body{
 
 @media screen and (max-width: 1300px){
     .zno__subItem{
-        font-size: 20px;
+        font-size: 24px;
     }
     .zno__titleblock{
         font-size: 20px;
         top: 15%;
     }
+    .zno__subRow{
+        height: 70%;
+    }
 }
-@media screen and (max-width: 560px){
+@media screen and (max-width: 592px){
     .zno__subItem{
         font-size: 20px;
     }
@@ -430,8 +432,11 @@ html,body{
         top: 15%;
         line-height: 150%;
     }
+    .zno__subRow{
+        height: 60%;
+    }
 }
-@media screen and (max-width: 440px){
+@media screen and (max-width: 456px){
     .zno__subItem{
         font-size: 17px;
     }
@@ -446,12 +451,24 @@ html,body{
         font-size: 13px;
     }
     .zno__titleblock{
-        font-size: 11px;
-        top: 15%;
+        font-size: 12px;
+        top: 20%;
+        width: 70%;
         line-height: 160%;
     }
     .zno__subRow{
+        height: 60%;
+    }
+    .zno__block{
+        width: 80%;
         height: 50%;
+        position: absolute;
+        top:25%;
+        left:10%;
+    
+        border: 9px solid #000;
+        
+        background-color: rgb(255, 255, 255);
     }
 }
 
