@@ -160,162 +160,6 @@ body {
   color: rgb(255, 255, 255);
 }
 
-/* delete later! */
-.main__firstPage {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.main__blueblock {
-  position: absolute;
-  width: 70%;
-  background: #b9dfdf;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.main__blackblock {
-  position: absolute;
-  top: 25%;
-  left: 15%;
-  background-color: rgb(0, 0, 0);
-  max-width: 70%;
-
-  z-index: 100;
-}
-.main__blackblRow {
-  display: flex;
-  justify-content: space-between;
-}
-.main__imgRobot {
-  max-width: 40%;
-
-  background-color: rgb(0, 0, 0);
-}
-.main__imgRobot img {
-  max-width: 100%;
-}
-
-.main__textBl {
-}
-.main__txtRow {
-  display: flex;
-  flex-direction: column;
-}
-.main__blueLine {
-  width: 15px;
-  height: 150px;
-  background-color: #b9dfdf;
-  margin-top: 4%;
-}
-.main__firstPageTitle {
-  font-size: 40px;
-  color: honeydew;
-  padding: 5% 1% 0 0;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-.main__firstPageTxt {
-  font-size: 30px;
-  color: honeydew;
-  line-height: 140%;
-  padding: 5% 1% 0 0;
-  letter-spacing: 1px;
-}
-@media screen and (max-width: 1518px) {
-  .main__firstPageTitle {
-    font-size: 30px;
-  }
-  .main__firstPageTxt {
-    font-size: 25px;
-    padding: 5% 1% 5% 0;
-  }
-  .main__blueLine {
-    width: 15px;
-    height: 120px;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .main__firstPageTitle {
-    font-size: 20px;
-    padding: 8% 1% 0 0;
-  }
-  .main__firstPageTxt {
-    font-size: 17px;
-    padding: 10% 1% 0 0;
-  }
-  .main__blueLine {
-    width: 13px;
-    height: 100px;
-  }
-
-  .main__imgRobot {
-    max-width: 50%;
-  }
-}
-@media screen and (max-width: 769px) {
-  .main__blackblRow {
-    flex-direction: column;
-    align-items: center;
-  }
-  .main__blueLine {
-    transform: rotate(90deg);
-    width: 15 px;
-    height: 120px;
-    align-self: center;
-  }
-  .main__firstPageTitle {
-    font-size: 20px;
-    padding: 0;
-    letter-spacing: 2px;
-    text-align: center;
-  }
-  .main__firstPageTxt {
-    font-size: 17px;
-    letter-spacing: 1px;
-    padding: 8% 1% 5% 0;
-    text-align: center;
-  }
-  .main__imgRobot {
-    max-width: 40%;
-  }
-  .main__blackblock {
-    top: 18%;
-    left: 15%;
-
-    max-width: 70%;
-  }
-}
-@media screen and (max-width: 769px) {
-  .main__blueLine {
-    width: 12px;
-    height: 110px;
-  }
-  .main__firstPageTitle {
-    font-size: 17px;
-
-    line-height: 120%;
-    
-  }
-  .main__firstPageTxt {
-    font-size: 14px;
-
-    padding: 10% 2%;
- 
-  }
-  .main__imgRobot {
-    max-width: 60%;
-  }
-  .main__blackblock {
-    top: 20%;
-   
-
-   
-  }
-}
-
-/* delete later! */
 
 /* menu hover effect */
 
@@ -450,11 +294,79 @@ body {
   flex: 1 1 auto;
 }
 
-.footer {
-  background-color: blueviolet;
-  padding: 30px;
-  text-align: center;
+/* main page! */
+.main-page {
+    
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
+.main__blueBackground {
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  top:0;
+  left: 0;
+  background-color: #b9dfdf;
+}
+.main__blackBlock { 
+  background-color: rgb(0, 0, 0);
+  color: cornsilk;
+  max-width: 80%;
+  z-index: 10;
+  
+}
+.main__blackRow { 
+  display: flex;
+
+
+}
+.main__robotImg  {
+  max-width: 100%;
+ align-self: center;
+  
+}
+.main__robotImg img  {
+  max-width: 80%;
+  
+}
+
+.main__textRow { 
+  display: flex;
+  flex-direction: column;
+ 
+  flex: 1 1 auto;
+  
+
+
+}
+.main__blueLine{
+  width: 15px;
+  height: 130px;
+  background-color:#b9dfdf ;
+  margin: 4% 0;
+}
+.main__title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 1% 1% 2% 0 ;
+}
+.main__description { 
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 2% 1% 5% 0;
+  line-height: 130%;
+}
+/* end of main page! */
+
+
 
 /* particles js */
 
@@ -586,3 +498,10 @@ body {
 }
 
 /* /zno block  */
+
+/* footer */
+.footer {
+  background-color: blueviolet;
+  padding: 30px;
+  text-align: center;
+}
