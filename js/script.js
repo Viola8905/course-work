@@ -133,7 +133,7 @@ particlesJS(
 let position = 0;
 
 const slidesToShow = 2,
-  slidesToScroll = 2,
+  slidesToScroll = 1,
   container = document.querySelector(".slider-container"),
   track = document.querySelector(".slider-track"),
   btnPrev = document.querySelector(".btn-prev"),
@@ -161,9 +161,7 @@ btnNext.addEventListener('click', () => {
 btnPrev.addEventListener("click", () => {
   const itemsLeft = Math.abs(position) / itemWidth;
 
-  position += -itemsLeft >= slidesToScroll
-    ? movePosition
-    : itemsLeft * itemWidth;
+  position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
 
   setPosition();
   checkButtons();
