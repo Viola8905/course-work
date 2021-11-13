@@ -667,10 +667,10 @@ body {
 }
 @media screen and (min-width: 2000px) {
   .about__title {
-    font-size: 39px;
+    font-size: 35px;
   }
   .about__mainTxt { 
-    font-size: 33px;
+    font-size: 30px;
   }
 }
 /* /about block */

@@ -96,11 +96,11 @@ particlesJS(
       events: {
         onhover: {
           enable: true,
-          mode: "grab",
+          mode: "repulse",
         },
         onclick: {
           enable: true,
-          mode: "repulse",
+          mode: "push",
         },
         resize: true,
       },
@@ -115,6 +115,120 @@ particlesJS(
           distance: 400,
           size: 4,
           duration: 2,
+          opacity: 0.2,
+          speed: 3,
+        },
+        repulse: {
+          distance: 150,
+        },
+        push: {
+          particles_nb: 2,
+        },
+        remove: {
+          particles_nb: 2,
+        },
+      },
+    },
+    retina_detect: true,
+  }
+);
+// Particles 2 Config
+
+particlesJS(
+  "particles-js2",
+
+  {
+    particles: {
+      number: {
+        value: 150,
+        density: {
+          enable: true,
+          value_area: 1000,
+        },
+      },
+      color: {
+        value: "#ffffff",
+      },
+      shape: {
+        type: "circle",
+        stroke: {
+          width: 1.5,
+          color: "#fff",
+        },
+        polygon: {
+          nb_sides: 15,
+        },
+        image: {
+          src: "",
+          width: 100,
+          height: 100,
+        },
+      },
+      opacity: {
+        value: 0.7,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: true,
+        },
+      },
+      size: {
+        value: 1,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 10,
+          size_min: 0.1,
+          sync: false,
+        },
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#fff",
+        opacity: 1,
+        width: 1,
+      },
+      move: {
+        enable: true,
+        speed: .7,
+        direction: "bottom",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "grab",
+        },
+        onclick: {
+          enable: true,
+          mode: "bubble",
+        },
+        resize: true,
+      },
+      modes: {
+        grab: {
+          distance: 400,
+          line_linked: {
+            opacity: 0.7,
+          },
+        },
+        bubble: {
+          distance: 400,
+          size: 8,
+          duration: .2,
           opacity: 0.2,
           speed: 3,
         },
