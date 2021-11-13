@@ -122,10 +122,13 @@ body {
   overflow: hidden;
   position: relative;
   transition: 0.6s;
+  display: flex;
+ 
 }
 .header__logo img {
   max-width: 100%;
   display: block;
+ 
 }
 .header__burger {
   display: none;
@@ -181,6 +184,17 @@ body {
 @media screen and (max-width: 1518px) {
   .header__logo {
     margin-left: 1%;
+  }
+ 
+  
+}
+@media screen and (min-width: 1918px) {
+  .header__ul a{
+    font-size: 27px;
+    
+  }
+  .header__logo {
+    flex: 0 0 80px ;
   }
   
 }
@@ -351,7 +365,10 @@ body {
 }
 .main__robotImg {
   max-width: 100%;
-  align-self: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .main__robotImg img {
@@ -495,16 +512,19 @@ body {
   
   .main__textRow{
    align-items: center;
-   padding: 10% 3%;
+   padding: 0% 3% 10% 3%;
    
   }
   .main__robotImg img{
-    width: 60% ;
+    width: 40% ;
+   
   }
   .main__robotImg {
      display: flex;
      justify-content: center;
      align-items: center;
+     align-self: center;
+     padding: 5% 0 0 0;
   }
   .main__readMore{
     font-size: 9px;
