@@ -1,23 +1,18 @@
-"use strict"
+"use strict";
 
-//for page scrolling
-window.addEventListener("scroll",function(){
-    let header = document.querySelector(".header");
-    header.classList.toggle("sticky",window.scrollY > 0);
-})
+// For page scrolling
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
 
-
-
-
-
-//for menu burger
-function toggleMenu(){
-    const button = document.getElementById('btn-menu');
-    const menu = document.getElementById('list-menu');
-    button.classList.toggle('active');
-    menu.classList.toggle('active');
+// For menu burger
+function toggleMenu() {
+  const button = document.getElementById("btn-menu");
+  const menu = document.getElementById("list-menu");
+  button.classList.toggle("active");
+  menu.classList.toggle("active");
 }
-
 
 // Particles Config
 particlesJS(
@@ -132,3 +127,55 @@ particlesJS(
     retina_detect: true,
   }
 );
+
+// Slider
+
+let position = 0;
+
+const slidesToShow = 2,
+  slidesToScroll = 2,
+  container = document.querySelector(".slider-container"),
+  track = document.querySelector(".slider-track"),
+  btnPrev = document.querySelector(".btn-prev"),
+  btnNext = document.querySelector(".btn-next"),
+  items = document.querySelectorAll(".slider-item"),
+  itemsCount = items.length,
+  itemWidth = container.clientWidth / slidesToShow,
+  movePosition = slidesToScroll * itemWidth;
+
+items.forEach((item) => {
+  item.style.minWidth = `${itemWidth}px`;
+});
+
+btnNext.addEventListener('click', () => {
+  const itemsLeft =
+    itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+
+  position -=
+    itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+  setPosition();
+  checkButtons();
+});
+
+btnPrev.addEventListener("click", () => {
+  const itemsLeft = Math.abs(position) / itemWidth;
+
+  position += -itemsLeft >= slidesToScroll
+    ? movePosition
+    : itemsLeft * itemWidth;
+
+  setPosition();
+  checkButtons();
+});
+
+const setPosition = () => {
+  track.style.transform = `translateX(${position}px)`;
+};
+
+const checkButtons = () => {
+  btnPrev.disabled = position === 0;
+  btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+};
+
+checkButtons();
