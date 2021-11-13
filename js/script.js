@@ -91,11 +91,11 @@ particlesJS(
       events: {
         onhover: {
           enable: true,
-          mode: "grab",
+          mode: "repulse",
         },
         onclick: {
           enable: true,
-          mode: "repulse",
+          mode: "push",
         },
         resize: true,
       },
@@ -147,7 +147,7 @@ items.forEach((item) => {
   item.style.minWidth = `${itemWidth}px`;
 });
 
-btnNext.addEventListener('click', () => {
+btnNext.addEventListener("click", () => {
   const itemsLeft =
     itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
 
@@ -161,7 +161,8 @@ btnNext.addEventListener('click', () => {
 btnPrev.addEventListener("click", () => {
   const itemsLeft = Math.abs(position) / itemWidth;
 
-  position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+  position +=
+    itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
 
   setPosition();
   checkButtons();
@@ -177,3 +178,23 @@ const checkButtons = () => {
 };
 
 checkButtons();
+
+// Feedback Tabs
+
+document.querySelectorAll(".tabs-trigger__item").forEach((item) =>
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = e.target.getAttribute("href").replace("#", "");
+
+    document
+      .querySelectorAll(".tabs-trigger__item")
+      .forEach((child) => child.classList.remove("tabs-trigger__item--active"));
+
+    document
+      .querySelectorAll(".tabs-content__item")
+      .forEach((child) => child.classList.remove("tabs-content__item--active"));
+
+    item.classList.add("tabs-trigger__item--active");
+    document.getElementById(id).classList.add("tabs-content__item--active");
+  })
+);

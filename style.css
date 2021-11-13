@@ -668,3 +668,38 @@ body {
 .slider-buttons {
 	text-align: center;
 }
+
+/* feedback tabs */
+.tabs-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #fff;
+
+	padding: 20px;
+	border: dashed 1px gray;
+}
+
+.tabs-trigger {
+  display: flex;
+  flex-direction: column;
+	padding: 20px;
+	border: dashed 1px gray;
+}
+.tabs-trigger__item {
+}
+.tabs-content {
+	padding: 20px;
+	border: dashed 1px gray;
+}
+.tabs-content__item {
+  display: none;
+}
+
+.tabs-trigger__item--active {
+  display: block;
+}
+
+.tabs-content__item--active {
+  display: block;
+}
