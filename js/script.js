@@ -132,8 +132,8 @@ particlesJS(
 
 let position = 0;
 
-const slidesToShow = 2,
-  slidesToScroll = 1,
+const slidesToShow = 4,
+  slidesToScroll = 2,
   container = document.querySelector(".slider-container"),
   track = document.querySelector(".slider-track"),
   btnPrev = document.querySelector(".btn-prev"),
@@ -183,7 +183,9 @@ checkButtons();
 
 document.querySelectorAll(".tabs-trigger__item").forEach((item) =>
   item.addEventListener("click", function (e) {
-    e.preventDefault();
+   
+		e.preventDefault();
+
     const id = e.target.getAttribute("href").replace("#", "");
 
     document
@@ -198,3 +200,15 @@ document.querySelectorAll(".tabs-trigger__item").forEach((item) =>
     document.getElementById(id).classList.add("tabs-content__item--active");
   })
 );
+
+var clickEvent = new MouseEvent("click", {
+  view: window,
+  bubbles: true,
+  cancelable: false,
+});
+
+(() => {
+	document
+    .querySelector(".tabs-trigger")
+    .children[0].dispatchEvent(clickEvent);
+})();

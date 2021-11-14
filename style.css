@@ -626,6 +626,7 @@ body {
   .zno__block {
     width: 80%;
     height: 50%;
+
     position: absolute;
     top: 25%;
     left: 10%;
@@ -640,8 +641,9 @@ body {
 
 /* footer */
 .footer {
-  background-color: blueviolet;
   padding: 30px;
+
+  background-color: blueviolet;
   text-align: center;
 }
 
@@ -649,57 +651,146 @@ body {
 .slider-container {
   overflow: hidden;
 
-	background: pink;
-	width: 1080px;
+  width: 1080px;
+
+  background: pink;
 }
 .slider-track {
-	display: flex;
-	background-color: yellow;
+  display: flex;
+  background-color: yellow;
 
-	transition: ease-in-out .4s;
+  transition: ease-in-out 0.4s;
 }
 .slider-item {
-	height: 100px;
+  height: 100px;
 }
-.slider-item:nth-child(3n+1) {background-color: lightblue;}
-.slider-item:nth-child(3n+2) {background-color: lightcoral;}
-.slider-item:nth-child(3n+3) {background-color: lightgreen;}
+.slider-item:nth-child(3n + 1) {
+  background-color: lightblue;
+}
+.slider-item:nth-child(3n + 2) {
+  background-color: lightcoral;
+}
+.slider-item:nth-child(3n + 3) {
+  background-color: lightgreen;
+}
 
 .slider-buttons {
-	text-align: center;
+  text-align: center;
 }
 
 /* feedback tabs */
 .tabs-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 
   background-color: #fff;
 
-	padding: 20px;
-	border: dashed 1px gray;
+  width: 1080px;
+  padding: 20px;
+  border: dashed 1px gray;
 }
 
 .tabs-trigger {
   display: flex;
-  flex-direction: column;
-	padding: 20px;
-	border: dashed 1px gray;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
 .tabs-trigger__item {
+  width: 150px;
+  height: 150px;
+
+  background: no-repeat center;
+  background-image: url(./img/student-interwiev.jpg);
+  background-size: 100%;
+
+  border: black 3px solid;
+
+  transition: all ease-in-out 0.1s;
+
+  filter: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  cursor: pointer;
 }
+
+.tabs-trigger__item:hover {
+  -webkit-box-shadow: 0px 0px 35px -1px rgba(0, 210, 255, 0.39);
+  -moz-box-shadow: 0px 0px 35px -1px rgba(0, 210, 255, 0.39);
+  box-shadow: 0px 0px 35px -1px rgba(0, 210, 255, 0.39);
+
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+
+  background-size: 110%;
+  transition: background-size 2s ease-in;
+  -moz-transition: background-size 2s ease-in;
+  -ms-transition: background-size 2s ease-in;
+  -o-transition: background-size 2s ease-in;
+  -webkit-transition: background-size 2s ease-in;
+
+  transition: all ease-in-out 0.2s;
+}
+
 .tabs-content {
-	padding: 20px;
-	border: dashed 1px gray;
+  position: relative;
+
+  margin: 25px 0;
+  transition: 0.2s;
 }
+
 .tabs-content__item {
-  display: none;
+	position: relative;
+	
+	padding: 15px 0;
+	
+  transform: translateX(10%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.tabs-content__item > * {
+  padding-bottom: 10px;
+}
+
+.tabs-content__item h2 {
+  padding-top: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.tabs-content__item p {
+  font-size: medium;
+  font-weight: normal;
+  line-height: 150%;
 }
 
 .tabs-trigger__item--active {
   display: block;
 }
 
+.tabs-content__item--active::before {
+  position: absolute;
+  content: "";
+
+  margin-bottom: 10px;
+
+  top: 0px;
+  width: 80px;
+  height: 4px;
+
+  background-color: #b9dfdf;
+}
+
 .tabs-content__item--active {
-  display: block;
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s 0.01s, transform 1s 0.02s, visibility 0.5s 0.02s;
 }
