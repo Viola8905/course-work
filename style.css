@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400;1,900&display=swap");
 
 /*Обнуление*/
 * {
@@ -95,7 +95,6 @@ body {
 @media screen and (max-width: 1518px) {
   .container {
     min-width: 800px;
-    
   }
 }
 /* css for header */
@@ -123,12 +122,10 @@ body {
   position: relative;
   transition: 0.6s;
   display: flex;
- 
 }
 .header__logo img {
   max-width: 100%;
   display: block;
- 
 }
 .header__burger {
   display: none;
@@ -172,31 +169,26 @@ body {
   letter-spacing: 1px;
 }
 @media screen and (max-width: 1011px) {
-  .header__ul a{
+  .header__ul a {
     font-size: 16px;
   }
-  
-  .header__logo img{
-   padding: 1px;
+
+  .header__logo img {
+    padding: 1px;
   }
-  
 }
 @media screen and (max-width: 1518px) {
   .header__logo {
     margin-left: 1%;
   }
- 
-  
 }
 @media screen and (min-width: 1918px) {
-  .header__ul a{
+  .header__ul a {
     font-size: 27px;
-    
   }
   .header__logo {
-    flex: 0 0 80px ;
+    flex: 0 0 80px;
   }
-  
 }
 /* menu hover effect */
 
@@ -313,7 +305,7 @@ body {
   .header__logo img {
     max-width: 50px;
   }
-  .sticky{
+  .sticky {
     padding: 0;
   }
 }
@@ -365,15 +357,13 @@ body {
 }
 .main__robotImg {
   max-width: 100%;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .main__robotImg img {
   max-width: 80%;
-  
 }
 
 .main__textRow {
@@ -396,16 +386,16 @@ body {
   line-height: 120%;
 }
 .main__description {
-  font-size: 25px;
+  font-size: 29px;
   letter-spacing: 1px;
   margin: 2% 1% 3% 0;
   line-height: 140%;
   font-weight: 300;
 }
-.main__readMore{
-  display:inline-block;
+.main__readMore {
+  display: inline-block;
   background-color: rgb(0, 0, 0);
-  font-weight:600 ;
+  font-weight: 600;
   font-size: 20px;
   padding: 1% 2%;
   letter-spacing: 2px;
@@ -414,7 +404,7 @@ body {
   margin: 2% 0 5% 0;
   cursor: pointer;
 }
-.main__btn :hover{
+.main__btn :hover {
   -webkit-box-shadow: 12px 11px 92px -10px rgba(185, 223, 223, 0.71);
   -moz-box-shadow: 12px 11px 92px -10px rgba(185, 223, 223, 0.71);
   box-shadow: 12px 11px 92px -10px rgba(185, 223, 223, 0.71);
@@ -424,22 +414,19 @@ body {
     font-size: 25px;
   }
   .main__description {
-    font-size:19px ;
+    font-size: 19px;
     margin: 5% 1% 5% 0;
   }
   .main__robotImg img {
     max-width: 80%;
-    
   }
   .main__blueLine {
     width: 15px;
     height: 110px;
-
   }
-  .main__readMore{
+  .main__readMore {
     font-size: 15px;
   }
-
 }
 
 @media screen and (max-width: 1025px) {
@@ -447,21 +434,18 @@ body {
     font-size: 20px;
   }
   .main__description {
-    font-size:15px ;
-    
+    font-size: 15px;
   }
 }
 
-
 @media screen and (max-width: 846px) {
-  .main__readMore{
+  .main__readMore {
     font-size: 12px;
     border: 3px solid #b9dfdf;
   }
   .main__blueLine {
     width: 10px;
     height: 90px;
-
   }
 }
 @media screen and (max-width: 808px) {
@@ -469,20 +453,18 @@ body {
     font-size: 17px;
   }
   .main__description {
-    font-size:13px ;
-    
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 625px) {
-  .main__readMore{
+  .main__readMore {
     font-size: 10px;
     border: 3px solid #b9dfdf;
   }
   .main__blueLine {
     width: 10px;
     height: 70px;
-
   }
 }
 @media screen and (max-width: 563px) {
@@ -490,57 +472,50 @@ body {
     font-size: 13px;
   }
   .main__description {
-    font-size:10px ;
-    
+    font-size: 10px;
   }
   .main__blueLine {
     width: 8px;
     height: 50px;
-
   }
 }
 @media screen and (max-width: 445px) {
-  .main__blackRow{
+  .main__blackRow {
     flex-direction: column;
   }
   .main__blueLine {
     width: 8px;
     height: 50px;
     transform: rotate(90deg);
-   
+  }
 
+  .main__textRow {
+    align-items: center;
+    padding: 0% 3% 10% 3%;
   }
-  
-  .main__textRow{
-   align-items: center;
-   padding: 0% 3% 10% 3%;
-   
-  }
-  .main__robotImg img{
-    width: 40% ;
-   
+  .main__robotImg img {
+    width: 40%;
   }
   .main__robotImg {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     align-self: center;
-     padding: 5% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 5% 0 0 0;
   }
-  .main__readMore{
+  .main__readMore {
     font-size: 9px;
     border: 3px solid #b9dfdf;
     line-height: 140%;
-    
   }
-  .main__btn{
+  .main__btn {
     margin-top: 4%;
   }
-  .main__description{
+  .main__description {
     font-size: 12px;
     text-align: center;
   }
-  .main__title{
+  .main__title {
     text-align: center;
   }
 }
@@ -549,7 +524,7 @@ body {
 
 /* ABOUT BLOCK (mobile first way)*/
 
-.main-about { 
+.main-about {
   background-color: #b9dfdf;
   overflow: hidden;
   padding: 0 0 1% 0;
@@ -563,36 +538,28 @@ body {
   position: absolute;
   z-index: 5;
   top: 5%;
- 
-  
 }
 .about__twoBody {
   position: relative;
-  
- }
-.about__twoRow { 
+}
+.about__twoRow {
   display: flex;
   height: 100vh;
-  
 }
-.about__blackBl { 
+.about__blackBl {
   background-color: rgb(0, 0, 0);
   width: 50vh;
-  
-  margin-left:4% ;
 
-
+  margin-left: 4%;
 }
-.about__mainTxtRow{
+.about__mainTxtRow {
   align-self: flex-end;
- 
+
   flex: 0 0 80%;
   display: flex;
   justify-content: center;
- 
- 
 }
-.about__mainTxt { 
+.about__mainTxt {
   font-size: 15px;
   font-weight: 500;
   padding: 3% 2%;
@@ -600,44 +567,33 @@ body {
   border: 5px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   max-width: 90%;
- 
-  
- 
-
- 
-  
 }
-.about__hideForPhone{
+.about__hideForPhone {
   display: none;
 }
-.about__secondParagraph{
+.about__secondParagraph {
   margin-top: 6%;
 }
-.about__mainTxt p{
+.about__mainTxt p {
   line-height: 140%;
-  
 }
 @media screen and (max-height: 600px) {
-  .about__twoRow { 
-   
-    height:110vh;
-    
+  .about__twoRow {
+    height: 110vh;
   }
 }
 
 @media screen and (min-width: 345px) {
-  .about__mainTxtRow{
+  .about__mainTxtRow {
     align-self: center;
     margin-top: 13%;
   }
-  
 }
 @media screen and (min-width: 632px) {
-  .about__mainTxtRow{
+  .about__mainTxtRow {
     align-self: center;
-   
   }
-  .about__mainTxt { 
+  .about__mainTxt {
     font-size: 18px;
   }
   .about__title {
@@ -645,50 +601,48 @@ body {
   }
 }
 @media screen and (max-width: 794px) {
-  .container{
-   min-width: 0;
+  .container {
+    min-width: 0;
   }
 }
 @media screen and (min-width: 1023px) {
-  .about__blackBl { 
- 
+  .about__blackBl {
     width: 15vh;
   }
   .about__title {
     top: 8%;
     padding: 2% 3%;
-    font-size:26px ;
+    font-size: 26px;
   }
-  .about__mainTxt { 
+  .about__mainTxt {
     font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1500px) {
- 
   .about__title {
     font-size: 28px;
     top: 10%;
   }
-  .about__mainTxt { 
+  .about__mainTxt {
     font-size: 24px;
   }
-  .about__blackBl { 
-   
-    height:  100vh;
+  .about__blackBl {
+    height: 100vh;
   }
 }
 @media screen and (min-width: 2000px) {
   .about__title {
     font-size: 33px;
   }
-  .about__mainTxt { 
+  .about__mainTxt {
     font-size: 29px;
+    border: 9px solid rgb(0, 0, 0);
   }
 }
 
 @media screen and (min-width: 2500px) {
-  .about__hideForPhone{
+  .about__hideForPhone {
     display: block;
     font-size: 29px;
     margin-top: 6%;
@@ -719,7 +673,7 @@ body {
   top: 20%;
   left: 10%;
 
-  border: 9px solid #000;
+  border: 5px solid #000;
 
   background-color: rgb(255, 255, 255);
 }
@@ -763,6 +717,11 @@ body {
 
   line-height: 160%;
 }
+@media screen and (min-width: 2000px) {
+  .zno__block {
+    border: 9px solid #000;
+  }
+}
 
 @media screen and (max-width: 1300px) {
   .zno__subItem {
@@ -798,6 +757,9 @@ body {
     top: 15%;
     line-height: 150%;
   }
+  .zno__block {
+    border: 4px solid #000;
+  }
 }
 @media screen and (max-width: 391px) {
   .zno__subItem {
@@ -818,17 +780,11 @@ body {
     position: absolute;
     top: 25%;
     left: 10%;
-
-    border: 9px solid #000;
-
     background-color: rgb(255, 255, 255);
   }
 }
 
 /* /zno block  */
-
-
-
 
 /* footer */
 .footer {
