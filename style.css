@@ -778,18 +778,18 @@ body {
 }
 @media screen and (min-width: 2300px) {
   .prog_title {
-    font-size: 32px;
+    font-size: 35px;
   }
   .prog__txt1 {
-    font-size: 28px;
+    font-size: 33px;
     border: 8px solid #b9dfdf;
   }
   .prog__txt2 {
-    font-size: 28px;
+    font-size: 33px;
     border: 8px solid #b9dfdf;
   }
   .prog__txt3 {
-    font-size: 28px;
+    font-size:  33px;
     border: 8px solid #b9dfdf;
   }
 }
@@ -811,7 +811,7 @@ body {
 
 /* end of particles js */
 
-/* zno block 
+/* zno block */
 .zno__block {
   width: 80%;
   height: 60%;
@@ -866,6 +866,16 @@ body {
 @media screen and (min-width: 2000px) {
   .zno__block {
     border: 9px solid #000;
+  }
+ 
+}
+@media screen and (min-width: 2200px) {
+  .zno__subItem {
+    font-size: 35px;
+  }
+  .zno__titleblock {
+    font-size: 35px;
+    top: 15%;
   }
 }
 
@@ -929,23 +939,7 @@ body {
     background-color: rgb(255, 255, 255);
   }
 }
-*/
-.main__zno {
-}
-.container {
-}
-.zno__particles-js {
-}
-.zno__titleblock {
-}
-.zno__block {
-}
-.zno__subjects {
-}
-.zno__subRow {
-}
-.zno__subItem {
-}
+
 
 /* /zno block  */
 
