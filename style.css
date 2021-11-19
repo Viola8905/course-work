@@ -722,7 +722,7 @@ body {
 .prog__img {
   display: flex;
   justify-content: flex-end;
-  padding: 15% 0;
+  padding: 15% 0 10% 0;
 }
 .prog__img img {
   max-width: 60%;
@@ -762,6 +762,7 @@ body {
 @media screen and (min-width: 1400px) {
   .prog_title {
     font-size: 28px;
+    margin-top: 10%;
   }
   .prog__txt1 {
     font-size: 25px;
@@ -774,6 +775,9 @@ body {
   .prog__txt3 {
     font-size: 25px;
     border: 6px solid #b9dfdf;
+  }
+  .prog__row {
+    margin-top: 10%;
   }
 }
 @media screen and (min-width: 2300px) {
@@ -789,7 +793,7 @@ body {
     border: 8px solid #b9dfdf;
   }
   .prog__txt3 {
-    font-size:  33px;
+    font-size: 33px;
     border: 8px solid #b9dfdf;
   }
 }
@@ -867,7 +871,6 @@ body {
   .zno__block {
     border: 9px solid #000;
   }
- 
 }
 @media screen and (min-width: 2200px) {
   .zno__subItem {
@@ -939,9 +942,81 @@ body {
     background-color: rgb(255, 255, 255);
   }
 }
-
-
 /* /zno block  */
+
+/* OUR STUDENTS CAN (mobile first) */
+.main-powers {
+  background-image: linear-gradient(135deg, rgb(1, 5, 36) 0%, rgb(100, 182, 199) 44%, rgb(255, 255, 255) 100%);
+  
+ 
+  background-size: 400%;
+ 
+  position: relative;
+  animation: change 7s ease-in-out infinite;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.powers__body {
+  position: relative;
+  padding: 10% 0 10% 0;
+}
+.powers__img {
+  width: 200px;
+  position: absolute;
+  visibility: hidden;
+}
+.powers__img img {
+  max-width: 100%;
+}
+.powers__coloredBl {
+  position: absolute;
+}
+.powers__row {
+  display: flex;
+  flex-direction: column;
+}
+.powers__title {
+  background-color: #000000;
+  align-self: center;
+  padding: 2% 4%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.powers__txt {
+  font-size: 16px;
+  list-style: none;
+}
+.powers__ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 5% 0;
+  margin: 5% 2%;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(0, 0, 0);
+}
+.powers__li {
+  margin-top: 5%;
+  margin-left: 3%;
+  background: url(/img/bulb.png) left top no-repeat;
+  background-size: 20px;
+  padding: 0 0 0 10%;
+  line-height: 120%;
+  font-weight: 300;
+  filter: invert(0);
+}
+
+/* /our students can */
 
 /* footer */
 .footer {
