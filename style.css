@@ -97,6 +97,25 @@ body {
     min-width: 800px;
   }
 }
+
+@media screen and (min-width: 1700px) {
+  .container {
+    max-width: 1500px;
+    
+  }
+}
+@media screen and (min-width: 2000px) {
+  .container {
+    min-width: 1800px;
+    
+  }
+}
+@media screen and (min-width: 2400px) {
+  .container {
+    min-width: 2200px;
+    
+  }
+}
 /* css for header */
 .header {
   padding: 10px 0;
@@ -309,18 +328,7 @@ body {
     padding: 0;
   }
 }
-@media screen and (min-width: 1700px) {
-  .container {
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 2300px) {
-  .container {
-    max-width: 2200px;
-    margin: 0 auto;
-  }
-}
+
 /* end of header css */
 
 .main {
@@ -408,6 +416,9 @@ body {
   -webkit-box-shadow: 12px 11px 92px -10px rgba(185, 223, 223, 0.71);
   -moz-box-shadow: 12px 11px 92px -10px rgba(185, 223, 223, 0.71);
   box-shadow: 12px 11px 92px -10px rgba(185, 223, 223, 0.71);
+}
+.main__btn{
+  cursor: pointer;
 }
 @media screen and (max-width: 1441px) {
   .main__title {
@@ -814,8 +825,170 @@ body {
 }
 
 /* end of particles js */
+/* OUR STUDENTS CAN (mobile first) */
+.main-powers {
+  background-image: linear-gradient(135deg, rgb(0, 0, 0) 0%, #9dffff 44%, rgb(235, 235, 235) 100%);
+  
+ 
+  background-size: 400%;
+ 
+  position: relative;
+  animation: change 6s ease-in-out infinite;
+}
 
-/* zno block */
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.powers__body {
+  position: relative;
+  padding: 5% 0 10% 0;
+}
+.powers__img {
+  
+  position: absolute;
+  visibility: hidden;
+}
+.powers__img img {
+  max-width: 100%;
+}
+.powers__coloredBl {
+  position: absolute;
+}
+.powers__row {
+  display: flex;
+  flex-direction: column;
+}
+.powers__title {
+  background-color: #000000;
+  align-self: center;
+  padding: 2% 4%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.powers__txt {
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  position: relative
+ 
+}
+.powers__ul {
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 5% 0;
+  margin: 5% 2%;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(0, 0, 0);
+  z-index: 10;
+}
+.powers__li {
+  margin-top: 5%;
+  margin-left: 3%;
+  background: url(/img/bulb.png) left top no-repeat;
+  background-size: 20px;
+  padding: 0 0 0 10%;
+  line-height: 120%;
+  font-weight: 300;
+  filter: invert(0);
+}
+
+@media screen and (min-width: 500px) {
+  .powers__li{
+    padding: 0 0 0 6%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  .powers__body{
+    background-color: white;
+  }
+  .powers__img{
+    visibility: visible;
+  }
+  .powers__txt{
+    margin-top: 5%;
+    justify-content: flex-start;
+  }
+  .powers__ul{
+    flex: 0 0 63%;
+  }
+  .powers__coloredBl{
+    width: 290px;
+    height: 600px;
+    background-color: #b9dfdf;
+    left: 50%;
+    
+    
+  }
+  .powers__img{
+    max-width: 30%;
+    left: 60%;
+    top:63%;
+    z-index: 9;
+  }
+
+}
+@media screen and (min-width: 1300px) {
+  .powers__li{
+    font-size: 20px;
+  }
+  .powers__img {
+    max-width: 30%;
+    top:60%;
+    left:58%
+  }
+  .powers__coloredBl{
+    height: 750px;
+  }
+  .powers__title{
+    font-size: 23px;
+  }
+  .powers__body{
+    padding: 5% 0 10% 0;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .powers__li{
+    font-size: 23px;
+    background-size: 30px;
+  }
+  .powers__title{
+    font-size: 25px;
+  }
+  .powers__coloredBl{
+    height: 1000px;
+    
+  }
+}
+@media screen and (min-width: 2300px) {
+  .powers__li{
+    font-size: 25px;
+    background-size: 30px;
+  }
+  .powers__title{
+    font-size: 28px;
+  }
+  .powers__coloredBl{
+    height: 1200px;
+    
+  }
+}
+
+/* /our students can */
+
+/* zno block 
 .zno__block {
   width: 80%;
   height: 60%;
@@ -838,7 +1011,7 @@ body {
   padding: 3%;
   text-align: center;
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   left: 5%;
   top: 11%;
   z-index: 10;
@@ -863,7 +1036,7 @@ body {
   margin-top: 5%;
 }
 .zno__subItem {
-  font-size: 30px;
+  font-size: 27px;
 
   line-height: 160%;
 }
@@ -874,17 +1047,17 @@ body {
 }
 @media screen and (min-width: 2200px) {
   .zno__subItem {
-    font-size: 35px;
+    font-size: 32px;
   }
   .zno__titleblock {
-    font-size: 35px;
+    font-size: 33px;
     top: 15%;
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1441px) {
   .zno__subItem {
-    font-size: 24px;
+    font-size: 20px;
   }
   .zno__titleblock {
     font-size: 20px;
@@ -942,81 +1115,12 @@ body {
     background-color: rgb(255, 255, 255);
   }
 }
+*/
 /* /zno block  */
 
-/* OUR STUDENTS CAN (mobile first) */
-.main-powers {
-  background-image: linear-gradient(135deg, rgb(1, 5, 36) 0%, rgb(100, 182, 199) 44%, rgb(255, 255, 255) 100%);
-  
- 
-  background-size: 400%;
- 
-  position: relative;
-  animation: change 7s ease-in-out infinite;
-}
 
-@keyframes change {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
 
-.powers__body {
-  position: relative;
-  padding: 10% 0 10% 0;
-}
-.powers__img {
-  width: 200px;
-  position: absolute;
-  visibility: hidden;
-}
-.powers__img img {
-  max-width: 100%;
-}
-.powers__coloredBl {
-  position: absolute;
-}
-.powers__row {
-  display: flex;
-  flex-direction: column;
-}
-.powers__title {
-  background-color: #000000;
-  align-self: center;
-  padding: 2% 4%;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-}
-.powers__txt {
-  font-size: 16px;
-  list-style: none;
-}
-.powers__ul {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 5% 0;
-  margin: 5% 2%;
-  background-color: rgb(255, 255, 255);
-  border: 5px solid rgb(0, 0, 0);
-}
-.powers__li {
-  margin-top: 5%;
-  margin-left: 3%;
-  background: url(/img/bulb.png) left top no-repeat;
-  background-size: 20px;
-  padding: 0 0 0 10%;
-  line-height: 120%;
-  font-weight: 300;
-  filter: invert(0);
-}
 
-/* /our students can */
 
 /* footer */
 .footer {
