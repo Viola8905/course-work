@@ -18,6 +18,23 @@ function toggleMenu(){
     menu.classList.toggle('active');
 }
 
+console.log('hello')
+
+//slider
+$(document).ready(function(){
+  $('.slider').slick({
+      arrows:true,
+      dots:true,
+      adaptiveHeight: true,
+      slidesToShow:1,
+      slidesToScroll:1,
+      speed: 600,
+      easing: 'linear',
+      autoplay:true,
+      autoplaSpeed:3000,
+      
+  });
+});
 
 // Particles Config
 particlesJS(
