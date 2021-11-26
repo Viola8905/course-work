@@ -1,13 +1,13 @@
 "use strict"
 
-//for page scrolling
+//for page header
 window.addEventListener("scroll",function(){
     let header = document.querySelector(".header");
     header.classList.toggle("sticky",window.scrollY > 0);
 })
 
 
-
+//scrolling to block
 $('.header__menu a').on('click', function() {
 
   let href = $(this).attr('href');
@@ -21,7 +21,6 @@ $('.header__menu a').on('click', function() {
 
   return false;
 });
-
 
 
 

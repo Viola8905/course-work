@@ -1290,6 +1290,59 @@ body {
 
 /* Slider */
 
+
+/* tabs */
+.main-feedback { 
+  background-image: linear-gradient(
+    135deg,
+    
+    #7addd5 0%,
+    #b9dfdf 20%,
+    #474747 58%,
+    rgb(0, 0, 0) 100%
+  );
+
+  background-size: 400%;
+
+  position: relative;
+  animation: change 15s ease-in-out infinite;
+  padding: 5% 0;
+}
+.container { }
+.tabs__body {
+  width: 70%;
+  margin: 0 auto;
+  background-color: aliceblue;
+  padding: 3%;
+  border: 7px solid black;
+ }
+.tabs__trigger { }
+.tabs__triggerRow { 
+  display: flex;
+  justify-content: space-between;
+}
+.tabs__triggerItem {
+  flex: 0 0 15%;
+  border: 5px solid black;
+ }
+ .tabs__triggerItem img {
+  width: 100%;
+ }
+.tabs__trLink { }
+.tabs__content { 
+  margin-top: 3%;
+}
+.tabs__contentItem { }
+.tabs__contentTxt {
+  font-size: 20px;
+  line-height: 120%;
+ }
+ .tabs__contentTxt h2{
+  font-size: 22px;
+  font-weight: 900;
+  padding: 1% 0 .3% 0;
+ }
+
 /* footer */
 .footer {
   background-color: rgb(127, 104, 148);
