@@ -278,6 +278,8 @@ particlesJS(
   }
 );
 
+
+// Tabs
 document.querySelectorAll(".tabs__triggerItem").forEach((item) =>
   item.addEventListener("click", function (e) {
     e.preventDefault();

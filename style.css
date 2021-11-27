@@ -669,7 +669,7 @@ body {
     font-size: 20px;
   }
 }
-
+  
 @media screen and (min-width: 1500px) {
   .about__title {
     font-size: 28px;
@@ -1322,20 +1322,34 @@ body {
   justify-content: space-between;
 }
 .tabs__triggerItem {
-  flex: 0 0 15%;
+  flex: 0 0 20%;
+ 
   border: 5px solid black;
+  overflow: hidden;
+ 
+ 
+ 
+ 
+  
 }
 /** Tabs Trigger */
 .tabs__triggerItem--active {
 }
 
 .tabs__triggerItem img {
-  width: 100%;
+  width: 100%; 
+  
+  
+  
+  
+ 
 }
 .tabs__trLink {
+ 
+ 
 }
+ 
 .tabs__content {
-  margin-top: 3%;
 }
 /** Tabs Content */
 .tabs__contentItem {
