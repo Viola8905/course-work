@@ -1173,11 +1173,11 @@ body {
   height: 100%;
   padding: 0;
 }
-.slider__mainTitle{
+.slider__mainTitle {
   display: flex;
   justify-content: center;
 }
-.slider__mainTitleBody{
+.slider__mainTitleBody {
   font-size: 27px;
   background-color: #000;
   color: aliceblue;
@@ -1273,7 +1273,7 @@ body {
 
 /* Активная точка */
 .slider .slick-dots li.slick-active button {
-  background-color:#b9dfdf;
+  background-color: #b9dfdf;
   border: 2.5px solid rgb(10, 10, 10);
   width: 18px;
   height: 18px;
@@ -1290,12 +1290,10 @@ body {
 
 /* Slider */
 
-
 /* tabs */
-.main-feedback { 
+.main-feedback {
   background-image: linear-gradient(
     135deg,
-    
     #7addd5 0%,
     #b9dfdf 20%,
     #474747 58%,
@@ -1308,40 +1306,56 @@ body {
   animation: change 15s ease-in-out infinite;
   padding: 5% 0;
 }
-.container { }
+.container {
+}
 .tabs__body {
   width: 70%;
   margin: 0 auto;
   background-color: aliceblue;
   padding: 3%;
   border: 7px solid black;
- }
-.tabs__trigger { }
-.tabs__triggerRow { 
+}
+.tabs__trigger {
+}
+.tabs__triggerRow {
   display: flex;
   justify-content: space-between;
 }
 .tabs__triggerItem {
   flex: 0 0 15%;
   border: 5px solid black;
- }
- .tabs__triggerItem img {
+}
+/** Tabs Trigger */
+.tabs__triggerItem--active {
+}
+
+.tabs__triggerItem img {
   width: 100%;
- }
-.tabs__trLink { }
-.tabs__content { 
+}
+.tabs__trLink {
+}
+.tabs__content {
   margin-top: 3%;
 }
-.tabs__contentItem { }
+/** Tabs Content */
+.tabs__contentItem {
+  display: none;
+  visibility: hidden;
+}
+.tabs__contentItem--active {
+	display: block;
+  visibility: visible;
+}
+
 .tabs__contentTxt {
   font-size: 20px;
   line-height: 120%;
- }
- .tabs__contentTxt h2{
+}
+.tabs__contentTxt h2 {
   font-size: 22px;
   font-weight: 900;
-  padding: 1% 0 .3% 0;
- }
+  padding: 1% 0 0.3% 0;
+}
 
 /* footer */
 .footer {

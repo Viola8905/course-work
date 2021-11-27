@@ -1,325 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-	
-</head>	
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- Header -->
-        <header class="header">
-            <div class="container">
-                <div class="header__body">
-                    <div class="header__logo">
-                        
-                        <img src="https://cdn1.iconfinder.com/data/icons/office-and-business-roundicons/137/Office_Business_work-31-256.png" alt="">
-                    </div>
-                    <button class="header__burger" id='btn-menu' onclick="toggleMenu()">
-                        <div class="line"></div>
-                    </button>
-                    <nav class="header__menu">
-                        <ul class="header__ul" id='list-menu'>
-                            <li><a href=".main-about">Про спеціальність </a></li>
-                            <li><a href=".main-programs">Програми</a></li>
-                            <li><a href=".main__zno">ЗНО</a></li>
-                            <li><a href=".main-slider">Співробітники</a></li>
-                            <li><a href="#">Відгуки</a></li>
-                        </ul>
-                        
-                    </nav>
-                </div>
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo">
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/office-and-business-roundicons/137/Office_Business_work-31-256.png"
+                alt=""
+              />
             </div>
-        </header>
-        <!-- /header -->
-        <!-- Main -->
-        <main class="main">
-            <section class="main-page">
-                <div class="main__blueBackground"></div>
-                <div class="main__blackBlock">
-                    <div class="main__blackRow">
-                        <div class="main__robotImg">
-                            <img src="/img/main-robot2.png" alt="">
-                        </div>
-                   
-                        <div class="main__textRow">
-                            <div class="main__blueLine"></div>
-                            <div class="main__title">Спеціальність "Прикладна математика"</div>
-                            <div class="main__description">Кафедра кібернетики та прикладної математики Ужгородського національного університету запрошує на навчання</div>
-                            <div class="main__btn">
-                                <button class="main__readMore">Дізнатися більше</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section class="main-about">
-              <div class="container">
-                <div class="about__twoBody">
-                    <div class="about__title">Що таке прикладна математика?</div>
-                       <div class="about__twoRow">
-                           <div id="particles-js2" class="about__blackBl"></div>
-                           <div class="about__mainTxtRow">
-                            <div class="about__mainTxt"> 
-                                <p class="about__firstParagraph">Прикладна математика – галузь математики, яка застосовує математичні методи, моделі, алгоритми, програмне забезпечення для дослідження, аналізу, проектування процесів і систем в інформатиці, економіці, техніці, науці, медицині, промисловості тощо. </p>
-    
-                                <p class="about__hideForPhone">Стрімкий розвиток комп’ютерних технологій відкриває нові можливості для розв’язування задач методами прикладної математики і комп’ютерної техніки. Сьогодні жодна серйозна задача не вирішується без побудови математичної і комп’ютерної моделі. Для прикладного математика комп’ютер є інструментом, за допомогою якого він розв’язує задачу.</p>
-                                <p class="about__secondParagraph">Сьогодні високо цінуються фахівці, які, окрім комп’ютерної підготовки, мають і фундаментальну математичну підготовку. Завдяки цьому вони здатні не тільки писати програмний код задачі, а й ставити, формулювати нові задачі шляхом математичного моделювання у різних сферах діяльності.</p>
-                            
-                           </div>
-                           </div>
-                          
-                       </div>
-                   </div>
-                  
+            <button class="header__burger" id="btn-menu" onclick="toggleMenu()">
+              <div class="line"></div>
+            </button>
+            <nav class="header__menu">
+              <ul class="header__ul" id="list-menu">
+                <li><a href=".main-about">Про спеціальність </a></li>
+                <li><a href=".main-programs">Програми</a></li>
+                <li><a href=".main__zno">ЗНО</a></li>
+                <li><a href=".main-slider">Співробітники</a></li>
+                <li><a href="#">Відгуки</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+      <!-- Main -->
+      <main class="main">
+        <section class="main-page">
+          <div class="main__blueBackground"></div>
+          <div class="main__blackBlock">
+            <div class="main__blackRow">
+              <div class="main__robotImg">
+                <img src="/img/main-robot2.png" alt="" />
               </div>
-              
-            </section>
-            <section class="main-programs">
-                <div class="container">
-                    <div class="prog__body">
-                        <div class="prog_title">Ми пропонуємо такі освітні програми:</div>
-                        <div class="prog__row">
-                            <div class="prog__txtBl">
-                                <div class="prog__txt1">Прикладна математика</div>
-                                <div class="prog__txt2">Прикладна інформатика</div>
-                                <div class="prog__txt3">Системи штучного інтелекту</div>
-                            </div>
-                            <div class="prog__img">
-                                <img src="/img/secondary-robot.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                  
 
+              <div class="main__textRow">
+                <div class="main__blueLine"></div>
+                <div class="main__title">
+                  Спеціальність "Прикладна математика"
                 </div>
-            </section>
-
-            <section class="main-powers">
-                <div class="container">
-                    <div class="powers__body">
-                        <div class="powers__img">
-                            <img src="/img/our-students-know.jpg" alt="">
-                        </div>
-                      
-                        <div class="powers__row">
-                            <div class="powers__title">Наші студенти вміють</div>
-                            <div class="powers__txt">
-                                <div class="powers__coloredBl"></div>
-                                <div class="powers__ul">
-                                    <li class="powers__li">Розробляти пошукові системи для баз даних у SQL</li>
-                                    <li class="powers__li">Створювати web-сторінки сайтів для розв'язування інших прикладних задач</li>
-                                    <li class="powers__li">Моделювати і прогнозувати соціально-економічні процеси на основі нейромереж</li>
-                                    <li class="powers__li">Розробляти нові методи синтезу штучних нейронних елементів</li>
-                                    <li class="powers__li">Використовувати ефективні методи захисту інформації</li>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+                <div class="main__description">
+                  Кафедра кібернетики та прикладної математики Ужгородського
+                  національного університету запрошує на навчання
                 </div>
-            </section>
-
-            <!-- zno section test -->
-            <section class="main__zno">
-               
-                <div class = "zno__particles-js" id="particles-js">
-                    <div class="container">
-                        <div class="zno__titleblock">Для вступу на спеціальність 113 «Прикладна математика» тобі потрібні такі сертифікати ЗНО:</div>
-                        <div class="zno__block">
-                            <div class="zno__subjects">
-                                <ul class="zno__subRow">
-                                    <li class="zno__subItem">1. УКРАЇНСЬКА МОВА ТА ЛІТЕРАТУРА</li>
-                                    <li class="zno__subItem">2. МАТЕМАТИКА</li>
-                                    <li class="zno__subItem">3. ІСТОРІЯ УКРАЇНИ або ГЕОГРАФІЯ або
-                                        ІНОЗЕМНА МОВА або ХІМІЯ або ФІЗИКА   </li>
-    
-                                        
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                   
+                <div class="main__btn">
+                  <button class="main__readMore">Дізнатися більше</button>
                 </div>
-            </section>
-            <!-- /zno section test -->
-            <section class="main-slider">
-                <div class="container">
-                    <div class="slider__mainTitle">
-                        <div class="slider__mainTitleBody"> Наші співробітники</div>
-                    </div>
-                    <div class="slider__wrapper">
-                        <div class="slider">
-                            <div class="slider__item">
-                                <div class="slider__itemBody">
-                                    <div class="slider__img">
-                                        <img src="img/our-students-know.jpg" alt="">
-                                    </div>
-                                    <div class="slider__email"><a target = "blank" href="myroslava.hlebena@uzhnu.edu.ua" class="email__link">myroslava.hlebena@uzhnu.edu.ua</a></div>
-                                    <div class="slider__initials">Гапак Таміла Семенівна</div>
-                                    <div class="slider__position">Старший викладач</div>
-                                    <div class="slider__description">Протягом роботи в УжНУ проводила практичні заняття з диференціальних рівнянь, рівняннь математичної фізики, теоретичної механіки. Також читала курси за вибором: «Ланцюгові дроби та їх застосування», «Основи операційної системи Linux».</div>
-                                    <div class="slider__readMore"> <a target = "blank" href="#">Дізнатися більше</a></div>
-                                </div>
-                            </div>
-                            <div class="slider__item">
-                                <div class="slider__itemBody">
-                                    <div class="slider__img">
-                                        <img src="img/our-students-know.jpg" alt="">
-                                    </div>
-                                    <div class="slider__email"><a target = "blank" href="myroslava.hlebena@uzhnu.edu.ua" class="email__link">myroslava.hlebena@uzhnu.edu.ua</a></div>
-                                    <div class="slider__initials">Гапак Таміла Семенівна</div>
-                                    <div class="slider__position">Старший викладач</div>
-                                    <div class="slider__description">Протягом роботи в УжНУ проводила практичні заняття з диференціальних рівнянь, рівняннь математичної фізики, теоретичної механіки. Також читала курси за вибором: «Ланцюгові дроби та їх застосування», «Основи операційної системи Linux».</div>
-                                    <div class="slider__readMore"> <a target = "blank" href="#">Дізнатися більше</a></div>
-                                </div>
-                            </div>
-                            <div class="slider__item">
-                                <div class="slider__itemBody">
-                                    <div class="slider__img">
-                                        <img src="img/our-students-know.jpg" alt="">
-                                    </div>
-                                    <div class="slider__email"><a target = "blank" href="myroslava.hlebena@uzhnu.edu.ua" class="email__link">myroslava.hlebena@uzhnu.edu.ua</a></div>
-                                    <div class="slider__initials">Гапак Таміла Семенівна</div>
-                                    <div class="slider__position">Старший викладач</div>
-                                    <div class="slider__description">Протягом gggggggggggggggggggggg jfriefjreig роботи в УжНУ проводила практичні заняття з диференціальних рівнянь, рівняннь математичної фізики, теоретичної механіки. Також читала курси за вибором: «Ланцюгові дроби та їх застосування», «Основи операційної системи Linux».</div>
-                                    <div class="slider__readMore"> <a target = "blank" href="#">Дізнатися більше</a></div>
-                                </div>
-                            </div>
-                            <div class="slider__item">
-                                <div class="slider__itemBody">
-                                    <div class="slider__img">
-                                        <img src="img/our-students-know.jpg" alt="">
-                                    </div>
-                                    <div class="slider__email"><a target = "blank" href="myroslava.hlebena@uzhnu.edu.ua" class="email__link">myroslava.hlebena@uzhnu.edu.ua</a></div>
-                                    <div class="slider__initials">Гапак Таміла Семенівна</div>
-                                    <div class="slider__position">Старший викладач</div>
-                                    <div class="slider__description">рактичні заняття з диференціальних рівнянь, рівняннь математичної фізики, теоретичної механіки. Також читала курси за вибором: «Ланцюгові дроби та їх застосування», «Основи операційної системи Linux».</div>
-                                    <div class="slider__readMore"> <a target = "blank" href="#">Дізнатися більше</a></div>
-                                </div>
-                                
-                            </div>
-                            <div class="slider__item">
-                                <div class="slider__itemBody">
-                                    <div class="slider__img">
-                                        <img src="img/our-students-know.jpg" alt="">
-                                    </div>
-                                    <div class="slider__email"><a target = "blank" href="myroslava.hlebena@uzhnu.edu.ua" class="email__link">myroslava.hlebena@uzhnu.edu.ua</a></div>
-                                    <div class="slider__initials">Гапак Таміла Семенівна</div>
-                                    <div class="slider__position">Старший викладач</div>
-                                    <div class="slider__description">Протягом роботи в Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo natus repudiandae a? Ipsam magnam autem deleniti labore debitis, nesciunt earum sapiente vel, omnis molestias quo, commodi quos quia repellendus.
-                                        УжНУ проводила практичні заняття з диференціальних рівнянь, рівняннь математичної фізики, теоретичної механіки. Також читала курси за вибором: «Ланцюгові дроби та їх застосування», «Основи операційної системи Linux».</div>
-                                    <div class="slider__readMore"> <a target = "blank" href="#">Дізнатися більше</a></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-
-            <section class="main-feedback">
-				<div class="container">
-                    <div class="tabs__body">
-                       <div class="tabs__trigger">
-                           <div class="tabs__triggerRow">
-                               <div class="tabs__triggerItem">
-                                   <a href="#tab-1" class="tabs__trLink"><img src="/img/student-interwiev.jpg" alt=""></a>
-                               </div>
-                               <div class="tabs__triggerItem">
-                                    <a href="#tab-2" class="tabs__trLink"><img src="/img/student-interwiev.jpg" alt=""></a>
-                                </div>
-                                <div class="tabs__triggerItem">
-                                    <a href="#tab-3" class="tabs__trLink"><img src="/img/student-interwiev.jpg" alt=""></a>
-                                </div>
-                                <div class="tabs__triggerItem">
-                                    <a href="#tab-4" class="tabs__trLink"><img src="/img/student-interwiev.jpg" alt=""></a>
-                                </div>
-                           </div>
-                       </div>
-
-                       <div class="tabs__content">
-                            <div id="tab-1" class="tabs__contentItem">
-                               <div class="tabs__contentTxt">
-                                    <h2>Чому обрали навчання саме в УжНУ?</h2>
-                                    <p>«Основною причиною вибору УжНУ було те, що вступив на бажануспеціальність на бюджет.
-                                    Обрав прикладну математику, бо ще у школі досить легко давалася математика. Покладаючись на попередньо вивчений матеріал,  ти завжди можеш пояснити новий, завжди є закономірність і правило, чому так».</p>
-                                    <h2>Які плани після випуску у плані професійного майбутнього?</h2>
-                                    <p>Із професійним майбутнім для програміста все дуже просто. Більшість успішних студентів уже з 3 курсу або працюють,
-                                    або проходять якесь стажування в компаніях. Тож я теж без проблем працевлаштувався. Викладачі можуть дати максимум потрібних знань,головне бажання та сміливість питати те, що хотілося б знати. Кожен із викладачів радий додатковим питанням.  Я впевнений, що навіть на прохання підготувати тебе до першої співбесіди, ніхто не відмовить у допомозі.</p>
-                                    <h2>Чи порекомендували би навчання на прикладній математиці вашим знайомим?</h2>
-                                    <p>Чи можу я рекомендувати свою спеціальність? Ну звісно, адже я вже більше 2 років успішно працюю розробником і постійно зустрічаю колег-випускників. Значну частину знань отримав саме тут. Проте не варто забувати, що вступ не гарантує подальше працевлаштування. Його гарантує кожен сам собі своєю наполегливістю і бажанням щось вчити. Прикладна математика може просто полегшити та пришвидшити вивчення.</p>
-                               </div>
-                            </div>
-                            <div id="tab-2" class="tabs__contentItem">
-                                <div class="tabs__contentTxt">
-                                    Content2
-                                </div>
-                            </div>
-                            <div id="tab-3" class="tabs__contentItem">
-                                <div class="tabs__contentTxt">
-                                    Content3
-                                </div>
-                            </div>
-                            <div id="tab-4" class="tabs__contentItem">
-                                <div class="tabs__contentTxt">
-                                    Content4
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                       
-                    </div>
-                </div>
-               
-    
-            </section>
-
-           
-
-
-            
-
-
-            
-
-        </main>
-        <!-- /main -->
-  
-
-        <section class="banner2">
-            lorem2 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            Lorem
+              </div>
+            </div>
+          </div>
         </section>
-      
-       
-        <!-- Footer -->
-        <footer class="footer">footer</footer>
-        <!-- /footer -->
+        <section class="main-about">
+          <div class="container">
+            <div class="about__twoBody">
+              <div class="about__title">Що таке прикладна математика?</div>
+              <div class="about__twoRow">
+                <div id="particles-js2" class="about__blackBl"></div>
+                <div class="about__mainTxtRow">
+                  <div class="about__mainTxt">
+                    <p class="about__firstParagraph">
+                      Прикладна математика – галузь математики, яка застосовує
+                      математичні методи, моделі, алгоритми, програмне
+                      забезпечення для дослідження, аналізу, проектування
+                      процесів і систем в інформатиці, економіці, техніці,
+                      науці, медицині, промисловості тощо.
+                    </p>
+
+                    <p class="about__hideForPhone">
+                      Стрімкий розвиток комп’ютерних технологій відкриває нові
+                      можливості для розв’язування задач методами прикладної
+                      математики і комп’ютерної техніки. Сьогодні жодна серйозна
+                      задача не вирішується без побудови математичної і
+                      комп’ютерної моделі. Для прикладного математика комп’ютер
+                      є інструментом, за допомогою якого він розв’язує задачу.
+                    </p>
+                    <p class="about__secondParagraph">
+                      Сьогодні високо цінуються фахівці, які, окрім комп’ютерної
+                      підготовки, мають і фундаментальну математичну підготовку.
+                      Завдяки цьому вони здатні не тільки писати програмний код
+                      задачі, а й ставити, формулювати нові задачі шляхом
+                      математичного моделювання у різних сферах діяльності.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-programs">
+          <div class="container">
+            <div class="prog__body">
+              <div class="prog_title">Ми пропонуємо такі освітні програми:</div>
+              <div class="prog__row">
+                <div class="prog__txtBl">
+                  <div class="prog__txt1">Прикладна математика</div>
+                  <div class="prog__txt2">Прикладна інформатика</div>
+                  <div class="prog__txt3">Системи штучного інтелекту</div>
+                </div>
+                <div class="prog__img">
+                  <img src="/img/secondary-robot.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-powers">
+          <div class="container">
+            <div class="powers__body">
+              <div class="powers__img">
+                <img src="/img/our-students-know.jpg" alt="" />
+              </div>
+
+              <div class="powers__row">
+                <div class="powers__title">Наші студенти вміють</div>
+                <div class="powers__txt">
+                  <div class="powers__coloredBl"></div>
+                  <div class="powers__ul">
+                    <li class="powers__li">
+                      Розробляти пошукові системи для баз даних у SQL
+                    </li>
+                    <li class="powers__li">
+                      Створювати web-сторінки сайтів для розв'язування інших
+                      прикладних задач
+                    </li>
+                    <li class="powers__li">
+                      Моделювати і прогнозувати соціально-економічні процеси на
+                      основі нейромереж
+                    </li>
+                    <li class="powers__li">
+                      Розробляти нові методи синтезу штучних нейронних елементів
+                    </li>
+                    <li class="powers__li">
+                      Використовувати ефективні методи захисту інформації
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- zno section test -->
+        <section class="main__zno">
+          <div class="zno__particles-js" id="particles-js">
+            <div class="container">
+              <div class="zno__titleblock">
+                Для вступу на спеціальність 113 «Прикладна математика» тобі
+                потрібні такі сертифікати ЗНО:
+              </div>
+              <div class="zno__block">
+                <div class="zno__subjects">
+                  <ul class="zno__subRow">
+                    <li class="zno__subItem">
+                      1. УКРАЇНСЬКА МОВА ТА ЛІТЕРАТУРА
+                    </li>
+                    <li class="zno__subItem">2. МАТЕМАТИКА</li>
+                    <li class="zno__subItem">
+                      3. ІСТОРІЯ УКРАЇНИ або ГЕОГРАФІЯ або ІНОЗЕМНА МОВА або
+                      ХІМІЯ або ФІЗИКА
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /zno section test -->
+        <section class="main-slider">
+          <div class="container">
+            <div class="slider__mainTitle">
+              <div class="slider__mainTitleBody">Наші співробітники</div>
+            </div>
+            <div class="slider__wrapper">
+              <div class="slider">
+                <div class="slider__item">
+                  <div class="slider__itemBody">
+                    <div class="slider__img">
+                      <img src="img/our-students-know.jpg" alt="" />
+                    </div>
+                    <div class="slider__email">
+                      <a
+                        target="blank"
+                        href="myroslava.hlebena@uzhnu.edu.ua"
+                        class="email__link"
+                        >myroslava.hlebena@uzhnu.edu.ua</a
+                      >
+                    </div>
+                    <div class="slider__initials">Гапак Таміла Семенівна</div>
+                    <div class="slider__position">Старший викладач</div>
+                    <div class="slider__description">
+                      Протягом роботи в УжНУ проводила практичні заняття з
+                      диференціальних рівнянь, рівняннь математичної фізики,
+                      теоретичної механіки. Також читала курси за вибором:
+                      «Ланцюгові дроби та їх застосування», «Основи операційної
+                      системи Linux».
+                    </div>
+                    <div class="slider__readMore">
+                      <a target="blank" href="#">Дізнатися більше</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__itemBody">
+                    <div class="slider__img">
+                      <img src="img/our-students-know.jpg" alt="" />
+                    </div>
+                    <div class="slider__email">
+                      <a
+                        target="blank"
+                        href="myroslava.hlebena@uzhnu.edu.ua"
+                        class="email__link"
+                        >myroslava.hlebena@uzhnu.edu.ua</a
+                      >
+                    </div>
+                    <div class="slider__initials">Гапак Таміла Семенівна</div>
+                    <div class="slider__position">Старший викладач</div>
+                    <div class="slider__description">
+                      Протягом роботи в УжНУ проводила практичні заняття з
+                      диференціальних рівнянь, рівняннь математичної фізики,
+                      теоретичної механіки. Також читала курси за вибором:
+                      «Ланцюгові дроби та їх застосування», «Основи операційної
+                      системи Linux».
+                    </div>
+                    <div class="slider__readMore">
+                      <a target="blank" href="#">Дізнатися більше</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__itemBody">
+                    <div class="slider__img">
+                      <img src="img/our-students-know.jpg" alt="" />
+                    </div>
+                    <div class="slider__email">
+                      <a
+                        target="blank"
+                        href="myroslava.hlebena@uzhnu.edu.ua"
+                        class="email__link"
+                        >myroslava.hlebena@uzhnu.edu.ua</a
+                      >
+                    </div>
+                    <div class="slider__initials">Гапак Таміла Семенівна</div>
+                    <div class="slider__position">Старший викладач</div>
+                    <div class="slider__description">
+                      Протягом gggggggggggggggggggggg jfriefjreig роботи в УжНУ
+                      проводила практичні заняття з диференціальних рівнянь,
+                      рівняннь математичної фізики, теоретичної механіки. Також
+                      читала курси за вибором: «Ланцюгові дроби та їх
+                      застосування», «Основи операційної системи Linux».
+                    </div>
+                    <div class="slider__readMore">
+                      <a target="blank" href="#">Дізнатися більше</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__itemBody">
+                    <div class="slider__img">
+                      <img src="img/our-students-know.jpg" alt="" />
+                    </div>
+                    <div class="slider__email">
+                      <a
+                        target="blank"
+                        href="myroslava.hlebena@uzhnu.edu.ua"
+                        class="email__link"
+                        >myroslava.hlebena@uzhnu.edu.ua</a
+                      >
+                    </div>
+                    <div class="slider__initials">Гапак Таміла Семенівна</div>
+                    <div class="slider__position">Старший викладач</div>
+                    <div class="slider__description">
+                      рактичні заняття з диференціальних рівнянь, рівняннь
+                      математичної фізики, теоретичної механіки. Також читала
+                      курси за вибором: «Ланцюгові дроби та їх застосування»,
+                      «Основи операційної системи Linux».
+                    </div>
+                    <div class="slider__readMore">
+                      <a target="blank" href="#">Дізнатися більше</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="slider__itemBody">
+                    <div class="slider__img">
+                      <img src="img/our-students-know.jpg" alt="" />
+                    </div>
+                    <div class="slider__email">
+                      <a
+                        target="blank"
+                        href="myroslava.hlebena@uzhnu.edu.ua"
+                        class="email__link"
+                        >myroslava.hlebena@uzhnu.edu.ua</a
+                      >
+                    </div>
+                    <div class="slider__initials">Гапак Таміла Семенівна</div>
+                    <div class="slider__position">Старший викладач</div>
+                    <div class="slider__description">
+                      Протягом роботи в Lorem ipsum, dolor sit amet consectetur
+                      adipisicing elit. Dolorem nemo natus repudiandae a? Ipsam
+                      magnam autem deleniti labore debitis, nesciunt earum
+                      sapiente vel, omnis molestias quo, commodi quos quia
+                      repellendus. УжНУ проводила практичні заняття з
+                      диференціальних рівнянь, рівняннь математичної фізики,
+                      теоретичної механіки. Також читала курси за вибором:
+                      «Ланцюгові дроби та їх застосування», «Основи операційної
+                      системи Linux».
+                    </div>
+                    <div class="slider__readMore">
+                      <a target="blank" href="#">Дізнатися більше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-feedback">
+          <div class="container">
+            <div class="tabs__body">
+              <div class="tabs__trigger">
+                <div class="tabs__triggerRow">
+                  <div class="tabs__triggerItem">
+                    <a href="#tab-1" target="" class="tabs__trLink"></a>
+										<img src="/img/student-interwiev.jpg" alt="alteration" />
+                  </div>
+                  <div class="tabs__triggerItem">
+                    <a href="#tab-2" class="tabs__trLink">
+                      LINK
+                      <!-- <img src="/img/student-interwiev.jpg" alt="alteration" /> -->
+                    </a>
+                  </div>
+                  <div class="tabs__triggerItem">
+                    <a href="#tab-3" class="tabs__trLink">
+                      LINK
+                      <!-- <img src="/img/student-interwiev.jpg" alt="" /> -->
+                    </a>
+                  </div>
+                  <div class="tabs__triggerItem">
+                    <a href="#tab-4" class="tabs__trLink">
+											<img src="/img/student-interwiev.jpg" alt=""/>
+									</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs__content">
+                <div id="tab-1" class="tabs__contentItem">
+                  <div class="tabs__contentTxt">
+                    <h2>Чому обрали навчання саме в УжНУ?</h2>
+                    <p>
+                      «Основною причиною вибору УжНУ було те, що вступив на
+                      бажануспеціальність на бюджет. Обрав прикладну математику,
+                      бо ще у школі досить легко давалася математика.
+                      Покладаючись на попередньо вивчений матеріал, ти завжди
+                      можеш пояснити новий, завжди є закономірність і правило,
+                      чому так».
+                    </p>
+                    <h2>
+                      Які плани після випуску у плані професійного майбутнього?
+                    </h2>
+                    <p>
+                      Із професійним майбутнім для програміста все дуже просто.
+                      Більшість успішних студентів уже з 3 курсу або працюють,
+                      або проходять якесь стажування в компаніях. Тож я теж без
+                      проблем працевлаштувався. Викладачі можуть дати максимум
+                      потрібних знань,головне бажання та сміливість питати те,
+                      що хотілося б знати. Кожен із викладачів радий додатковим
+                      питанням. Я впевнений, що навіть на прохання підготувати
+                      тебе до першої співбесіди, ніхто не відмовить у допомозі.
+                    </p>
+                    <h2>
+                      Чи порекомендували би навчання на прикладній математиці
+                      вашим знайомим?
+                    </h2>
+                    <p>
+                      Чи можу я рекомендувати свою спеціальність? Ну звісно,
+                      адже я вже більше 2 років успішно працюю розробником і
+                      постійно зустрічаю колег-випускників. Значну частину знань
+                      отримав саме тут. Проте не варто забувати, що вступ не
+                      гарантує подальше працевлаштування. Його гарантує кожен
+                      сам собі своєю наполегливістю і бажанням щось вчити.
+                      Прикладна математика може просто полегшити та пришвидшити
+                      вивчення.
+                    </p>
+                  </div>
+                </div>
+                <div id="tab-2" class="tabs__contentItem">
+                  <div class="tabs__contentTxt">Content2</div>
+                </div>
+                <div id="tab-3" class="tabs__contentItem">
+                  <div class="tabs__contentTxt">Content3</div>
+                </div>
+                <div id="tab-4" class="tabs__contentItem">
+                  <div class="tabs__contentTxt">Content4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- /main -->
+
+      <section class="banner2">
+        lorem2
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        Lorem
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">footer</footer>
+      <!-- /footer -->
     </div>
-    
 
     <script defer src="/js/particles.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/slick.min.js"></script>
     <script defer src="/js/script.js"></script>
-
-</body>
+  </body>
 </html>
