@@ -290,11 +290,15 @@ document.querySelectorAll(".tabs__triggerItem").forEach((item) =>
       .querySelectorAll(".tabs__triggerItem")
       .forEach((child) => child.classList.remove("tabs__triggerItem--active"));
 
+   
+
     document
       .querySelectorAll(".tabs__contentItem")
       .forEach((child) => child.classList.remove("tabs__contentItem--active"));
+
 
     item.classList.add("tabs__triggerItem--active");
     document.getElementById(id).classList.add("tabs__contentItem--active");
   })
 );
+

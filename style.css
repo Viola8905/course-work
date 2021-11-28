@@ -1211,11 +1211,11 @@ body {
 .slider__item {
   display: flex;
   flex-direction: column;
-  height: 700px;
+ 
 }
 
 .slider__itemBody {
-  flex: 0 0 95%;
+  flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1225,11 +1225,13 @@ body {
   margin: 0 3%;
 }
 .slider__img {
-  display: flex;
-  justify-content: center;
+ display: flex;
+ justify-content: center;
+  
+ 
 }
 .slider__img img {
-  width: 30%;
+  width: 60%;
   border-radius: 20px;
 }
 .slider__email {
@@ -1265,6 +1267,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1%;
 }
 .slider .slick-dots li {
   list-style: none;
@@ -1281,7 +1284,7 @@ body {
 /* Элемент точки */
 .slider .slick-dots li button {
   font-size: 0;
-  width: 13px;
+  width: 12px;
   height: 12px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
@@ -1326,23 +1329,39 @@ body {
  
   border: 5px solid black;
   overflow: hidden;
- 
- 
- 
- 
+  position: relative;
   
+}
+.tabs__heroDescr{
+  padding: 2% 3%;
+  font-size: 17px;
+  background-color: #00000088;
+  color: #ffffff;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+ 
+ 
+}
+.tabs__heroDescr p{
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 1px;
 }
 /** Tabs Trigger */
 .tabs__triggerItem--active {
 }
 
 .tabs__triggerItem img {
-  width: 100%; 
-  
-  
-  
-  
+  max-width: 100%; 
  
+
+ 
+
 }
 .tabs__trLink {
  
@@ -1361,6 +1380,9 @@ body {
   visibility: visible;
 }
 
+
+/*  */
+
 .tabs__contentTxt {
   font-size: 20px;
   line-height: 120%;
@@ -1368,7 +1390,7 @@ body {
 .tabs__contentTxt h2 {
   font-size: 22px;
   font-weight: 900;
-  padding: 1% 0 0.3% 0;
+  padding: 3% 0 0.3% 0;
 }
 
 /* footer */
