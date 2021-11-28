@@ -669,7 +669,7 @@ body {
     font-size: 20px;
   }
 }
-  
+
 @media screen and (min-width: 1500px) {
   .about__title {
     font-size: 28px;
@@ -705,8 +705,6 @@ body {
 .main-programs {
   background-color: black;
   color: rgb(255, 255, 255);
-}
-.container {
 }
 .prog__body {
   display: flex;
@@ -1306,8 +1304,6 @@ body {
   animation: change 15s ease-in-out infinite;
   padding: 5% 0;
 }
-.container {
-}
 .tabs__body {
   width: 70%;
   margin: 0 auto;
@@ -1323,32 +1319,20 @@ body {
 }
 .tabs__triggerItem {
   flex: 0 0 20%;
- 
+
   border: 5px solid black;
   overflow: hidden;
- 
- 
- 
- 
-  
 }
 /** Tabs Trigger */
 .tabs__triggerItem--active {
 }
 
 .tabs__triggerItem img {
-  width: 100%; 
-  
-  
-  
-  
- 
+  width: 100%;
 }
 .tabs__trLink {
- 
- 
 }
- 
+
 .tabs__content {
 }
 /** Tabs Content */
@@ -1357,7 +1341,7 @@ body {
   visibility: hidden;
 }
 .tabs__contentItem--active {
-	display: block;
+  display: block;
   visibility: visible;
 }
 
@@ -1376,4 +1360,94 @@ body {
   background-color: rgb(127, 104, 148);
   padding: 30px;
   text-align: center;
+}
+
+/** Contact */
+
+.contact__wrapper {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5% 0;
+}
+
+.contact__form {
+	display: flex;
+
+	flex-direction: column;
+	align-items: flex-end;
+
+	padding: 20px 30px 40px 30px;
+
+  box-shadow: 12px 11px 92px -10px rgb(185 223 223 / 71%);
+}
+
+.form__row {
+  display: flex;
+}
+
+.form__col:first-child {
+  padding-right: 10px;
+}
+
+.form__col:last-child {
+  padding-left: 10px;
+}
+
+.contact__mainTitle {
+  font-size: 27px;
+
+  padding: 20px 20px;
+}
+
+.form__input {
+  min-width: 220px;
+  font-weight: bold;
+
+  padding: 10px 14px;
+  border: 2px solid black;
+}
+
+.form__input::placeholder {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form__item {
+  padding: 10px 0;
+}
+
+.form__item > textarea {
+  resize: vertical;
+  min-height: 160px;
+  max-height: 320px;
+}
+
+.form__item > * {
+  display: flex;
+}
+
+.form__button {
+	width: 100%;
+	max-width: 200px;
+
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+  
+	margin: 10px auto -60px auto;
+	padding: 10px 14px;
+
+	background-color: black;
+
+	transition: ease 0.15s;
+}
+
+.form__button:hover {
+	box-shadow: 0px 0px 30px 0 rgb(0 0 0 / 35%);
+	
+	transition: ease 0.15s;
 }
