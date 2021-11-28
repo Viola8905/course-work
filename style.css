@@ -1375,12 +1375,12 @@ body {
 }
 
 .contact__form {
-	display: flex;
+  display: flex;
 
-	flex-direction: column;
-	align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 
-	padding: 20px 30px 40px 30px;
+  padding: 20px 30px 40px 30px;
 
   box-shadow: 12px 11px 92px -10px rgb(185 223 223 / 71%);
 }
@@ -1409,11 +1409,22 @@ body {
 
   padding: 10px 14px;
   border: 2px solid black;
+
+  transition: ease 0.15s;
+}
+
+.form__item ._error {
+  box-shadow: 0 0 5px 0px red;
 }
 
 .form__input::placeholder {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.form__input:focus {
+  box-shadow: 0 0 30px -10px rgb(185 223 223);
+  transition: ease 0.15s;
 }
 
 .form__item {
@@ -1431,23 +1442,23 @@ body {
 }
 
 .form__button {
-	width: 100%;
-	max-width: 200px;
+  width: 100%;
+  max-width: 200px;
 
-	color: white;
-	font-weight: bold;
-	text-transform: uppercase;
-  
-	margin: 10px auto -60px auto;
-	padding: 10px 14px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
 
-	background-color: black;
+  margin: 10px auto -60px auto;
+  padding: 10px 14px;
 
-	transition: ease 0.15s;
+  background-color: black;
+
+  transition: ease 0.15s;
 }
 
 .form__button:hover {
-	box-shadow: 0px 0px 30px 0 rgb(0 0 0 / 35%);
-	
-	transition: ease 0.15s;
+  box-shadow: 0px 0px 30px 0 rgb(0 0 0 / 35%);
+
+  transition: ease 0.15s;
 }

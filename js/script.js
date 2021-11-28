@@ -1,300 +1,353 @@
-"use strict"
+"use strict";
 
 //for page header
-window.addEventListener("scroll",function(){
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
     let header = document.querySelector(".header");
-    header.classList.toggle("sticky",window.scrollY > 0);
-})
-
-
-//scrolling to block
-$('.header__menu a').on('click', function() {
-
-  let href = $(this).attr('href');
-
-  $('html, body').animate({
-      scrollTop: $(href).offset().top
-  }, {
-      duration: 400,   // по умолчанию «400» 
-      easing: "linear" // по умолчанию «swing» 
+    header.classList.toggle("sticky", window.scrollY > 0);
   });
 
-  return false;
-});
+  //scrolling to block
+  $(".header__menu a").on("click", function () {
+    let href = $(this).attr("href");
 
+    $("html, body").animate(
+      {
+        scrollTop: $(href).offset().top,
+      },
+      {
+        duration: 400, // по умолчанию «400»
+        easing: "linear", // по умолчанию «swing»
+      }
+    );
 
+    return false;
+  });
 
-//for menu burger
-function toggleMenu(){
-    const button = document.getElementById('btn-menu');
-    const menu = document.getElementById('list-menu');
-    button.classList.toggle('active');
-    menu.classList.toggle('active');
-}
+  //for menu burger
+  function toggleMenu() {
+    const button = document.getElementById("btn-menu");
+    const menu = document.getElementById("list-menu");
+    button.classList.toggle("active");
+    menu.classList.toggle("active");
+  }
 
-console.log('hello')
-
-//slider
-$(document).ready(function(){
-  $('.slider').slick({
-      arrows:true,
-      dots:true,
+  //slider
+  $(document).ready(function () {
+    $(".slider").slick({
+      arrows: true,
+      dots: true,
       adaptiveHeight: true,
-      slidesToShow:1,
-      slidesToScroll:1,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       speed: 600,
-      easing: 'linear',
-      autoplay:true,
-      autoplaSpeed:3000,
-      
+      easing: "linear",
+      autoplay: true,
+      autoplaSpeed: 3000,
+    });
   });
-});
 
-// Particles Config
-particlesJS(
-  "particles-js",
+  // Particles Config
+  particlesJS(
+    "particles-js",
 
-  {
-    particles: {
-      number: {
-        value: 180,
-        density: {
-          enable: true,
-          value_area: 1000,
+    {
+      particles: {
+        number: {
+          value: 180,
+          density: {
+            enable: true,
+            value_area: 1000,
+          },
         },
-      },
-      color: {
-        value: "#ffffff",
-      },
-      shape: {
-        type: "circle",
-        stroke: {
-          width: 1.5,
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 1.5,
+            color: "#000",
+          },
+          polygon: {
+            nb_sides: 15,
+          },
+          image: {
+            src: "",
+            width: 100,
+            height: 100,
+          },
+        },
+        opacity: {
+          value: 0.7,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: true,
+          },
+        },
+        size: {
+          value: 1,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 10,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
           color: "#000",
+          opacity: 1,
+          width: 1,
         },
-        polygon: {
-          nb_sides: 15,
-        },
-        image: {
-          src: "",
-          width: 100,
-          height: 100,
-        },
-      },
-      opacity: {
-        value: 0.7,
-        random: true,
-        anim: {
+        move: {
           enable: true,
           speed: 1,
-          opacity_min: 0.1,
-          sync: true,
-        },
-      },
-      size: {
-        value: 1,
-        random: true,
-        anim: {
-          enable: false,
-          speed: 10,
-          size_min: 0.1,
-          sync: false,
-        },
-      },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#000",
-        opacity: 1,
-        width: 1,
-      },
-      move: {
-        enable: true,
-        speed: 1,
-        direction: "right",
-        random: false,
-        straight: false,
-        out_mode: "out",
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 1200,
-        },
-      },
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: {
-          enable: true,
-          mode: "repulse",
-        },
-        onclick: {
-          enable: true,
-          mode: "push",
-        },
-        resize: true,
-      },
-      modes: {
-        grab: {
-          distance: 200,
-          line_linked: {
-            opacity: 0.3,
+          direction: "right",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
           },
         },
-        bubble: {
-          distance: 400,
-          size: 4,
-          duration: 2,
-          opacity: 0.2,
-          speed: 3,
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse",
+          },
+          onclick: {
+            enable: true,
+            mode: "push",
+          },
+          resize: true,
         },
-        repulse: {
-          distance: 150,
-        },
-        push: {
-          particles_nb: 2,
-        },
-        remove: {
-          particles_nb: 2,
+        modes: {
+          grab: {
+            distance: 200,
+            line_linked: {
+              opacity: 0.3,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 4,
+            duration: 2,
+            opacity: 0.2,
+            speed: 3,
+          },
+          repulse: {
+            distance: 150,
+          },
+          push: {
+            particles_nb: 2,
+          },
+          remove: {
+            particles_nb: 2,
+          },
         },
       },
-    },
-    retina_detect: true,
-  }
-);
-// Particles 2 Config
+      retina_detect: true,
+    }
+  );
+  // Particles 2 Config
 
-particlesJS(
-  "particles-js2",
+  particlesJS(
+    "particles-js2",
 
-  {
-    particles: {
-      number: {
-        value: 150,
-        density: {
+    {
+      particles: {
+        number: {
+          value: 150,
+          density: {
+            enable: true,
+            value_area: 1000,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 1.5,
+            color: "#fff",
+          },
+          polygon: {
+            nb_sides: 15,
+          },
+          image: {
+            src: "",
+            width: 100,
+            height: 100,
+          },
+        },
+        opacity: {
+          value: 0.7,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: true,
+          },
+        },
+        size: {
+          value: 1,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 10,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
           enable: true,
-          value_area: 1000,
-        },
-      },
-      color: {
-        value: "#ffffff",
-      },
-      shape: {
-        type: "circle",
-        stroke: {
-          width: 1.5,
+          distance: 150,
           color: "#fff",
+          opacity: 1,
+          width: 1,
         },
-        polygon: {
-          nb_sides: 15,
-        },
-        image: {
-          src: "",
-          width: 100,
-          height: 100,
-        },
-      },
-      opacity: {
-        value: 0.7,
-        random: true,
-        anim: {
+        move: {
           enable: true,
-          speed: 1,
-          opacity_min: 0.1,
-          sync: true,
-        },
-      },
-      size: {
-        value: 1,
-        random: true,
-        anim: {
-          enable: false,
-          speed: 10,
-          size_min: 0.1,
-          sync: false,
-        },
-      },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#fff",
-        opacity: 1,
-        width: 1,
-      },
-      move: {
-        enable: true,
-        speed: .7,
-        direction: "bottom",
-        random: false,
-        straight: false,
-        out_mode: "out",
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 1200,
-        },
-      },
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: {
-          enable: true,
-          mode: "grab",
-        },
-        onclick: {
-          enable: true,
-          mode: "bubble",
-        },
-        resize: true,
-      },
-      modes: {
-        grab: {
-          distance: 400,
-          line_linked: {
-            opacity: 0.7,
+          speed: 0.7,
+          direction: "bottom",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
           },
         },
-        bubble: {
-          distance: 400,
-          size: 8,
-          duration: .2,
-          opacity: 0.2,
-          speed: 3,
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab",
+          },
+          onclick: {
+            enable: true,
+            mode: "bubble",
+          },
+          resize: true,
         },
-        repulse: {
-          distance: 150,
-        },
-        push: {
-          particles_nb: 2,
-        },
-        remove: {
-          particles_nb: 2,
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 0.7,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 8,
+            duration: 0.2,
+            opacity: 0.2,
+            speed: 3,
+          },
+          repulse: {
+            distance: 150,
+          },
+          push: {
+            particles_nb: 2,
+          },
+          remove: {
+            particles_nb: 2,
+          },
         },
       },
-    },
-    retina_detect: true,
-  }
-);
+      retina_detect: true,
+    }
+  );
 
+  // Tabs
+  document.querySelectorAll(".tabs__triggerItem").forEach((item) =>
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
 
-// Tabs
-document.querySelectorAll(".tabs__triggerItem").forEach((item) =>
-  item.addEventListener("click", function (e) {
+      const id = e.target.getAttribute("href").replace("#", "");
+
+      document
+        .querySelectorAll(".tabs__triggerItem")
+        .forEach((child) =>
+          child.classList.remove("tabs__triggerItem--active")
+        );
+
+      document
+        .querySelectorAll(".tabs__contentItem")
+        .forEach((child) =>
+          child.classList.remove("tabs__contentItem--active")
+        );
+
+      item.classList.add("tabs__triggerItem--active");
+      document.getElementById(id).classList.add("tabs__contentItem--active");
+    })
+  );
+
+  // Form
+
+  const form = document.getElementById("contact__form");
+  form.addEventListener("submit", formSend);
+
+  async function formSend(e) {
     e.preventDefault();
 
-    const id = e.target.getAttribute("href").replace("#", "");
+    let error = formValidate(form);
 
-    document
-      .querySelectorAll(".tabs__triggerItem")
-      .forEach((child) => child.classList.remove("tabs__triggerItem--active"));
+    if (error === 0) {
+    } else {
+      alert("Заповність обов'язкові поля");
+    }
+  }
 
-    document
-      .querySelectorAll(".tabs__contentItem")
-      .forEach((child) => child.classList.remove("tabs__contentItem--active"));
+  function formValidate(form) {
+    let error = 0;
+    let formReq = document.querySelectorAll("._req");
 
-    item.classList.add("tabs__triggerItem--active");
-    document.getElementById(id).classList.add("tabs__contentItem--active");
-  })
-);
+    for (let index = 0; index < formReq.length; index++) {
+      const input = formReq[index];
+      formRemoveError(input);
+
+      if (input.classList.contains("_email")) {
+        if (emailTest(input)) {
+          formAddError(input);
+          error++;
+        }
+      } else {
+        if (input.value === "") {
+          formAddError(input);
+          error++;
+        }
+      }
+    }
+    return error;
+  }
+
+  function formAddError(input) {
+    input.parentElement.classList.add("_error");
+    input.classList.add("_error");
+  }
+  function formRemoveError(input) {
+    input.parentElement.classList.remove("_error");
+    input.classList.remove("_error");
+  }
+
+  function emailTest(input) {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+  }
+});

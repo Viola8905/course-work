@@ -423,7 +423,7 @@
           <div class="container">
             <div class="contact__wrapper">
               <h2 class="contact__mainTitle">Задайте нам своє питання!</h2>
-              <form class="contact__form">
+              <form id="contact__form" class="contact__form">
                 
 								<div class="form__row">
                   <div class="form__col">
@@ -432,7 +432,7 @@
                         id="formName"
                         type="text"
                         name="name"
-                        class="form__input"
+                        class="form__input _req"
                         placeholder="Ім'я *"
                       />
                     </div>
@@ -441,7 +441,7 @@
                         id="formSurname"
                         type="text"
                         name="surname"
-                        class="form__input"
+                        class="form__input _req"
                         placeholder="Прізвище *"
                       />
                     </div>
@@ -450,7 +450,7 @@
                         id="formEmail"
                         type="text"
                         name="email"
-                        class="form__input"
+                        class="form__input _req _email"
                         placeholder="Електронна пошта *"
                       />
                     </div>
@@ -461,14 +461,14 @@
                         id="formQuestion"
                         type="text"
                         name="question"
-                        class="form__input"
+                        class="form__input _req"
                         placeholder="Текст повідомлення *"
                       ></textarea>
                     </div>
                   </div>
                 </div>
 							
-								<button type="button" class="form__button">Надіслати</button>
+								<button type="submit" class="form__button">Надіслати</button>
               </form>
             </div>
           </div>
