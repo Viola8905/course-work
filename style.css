@@ -1647,7 +1647,7 @@ body {
 .contact__formInputs {
   display: flex;
   flex-direction: column;
-  flex: 0 1 40%;
+  flex: 0 0 40%;
 
   padding: 0 4%;
 }
@@ -1679,7 +1679,7 @@ body {
   box-shadow: 0 0 5px 0px red;
 }
 .contact__formTextArea {
-  flex: 0 1 40%;
+  flex: 0 0 40%;
   padding: 0 4%;
 }
 
@@ -1702,4 +1702,78 @@ body {
   color: white;
   letter-spacing: 2px;
   font-size: 16px;
+}
+
+
+@media screen and (max-width: 1110px) {
+  .form__input {
+    font-size: 15px;
+  }
+  .contact__formItem > textarea {
+
+    min-height: 18.5vh;
+  }
+  .contact__mainTitle {
+    font-size: 24px;
+  }
+  .contact__btn {
+    font-size: 14px;
+  }
+
+ 
+
+}
+
+
+@media screen and (max-width: 850px) {
+  .form__input {
+    font-size: 13px;
+  }
+  .contact__btn {
+    font-size: 12px;
+  }
+  .contact__mainTitle {
+    font-size: 22px;
+  }
+  .contact__formItem > textarea {
+
+    min-height: 16.7vh;
+  }
+
+}
+@media screen and (max-width: 720px) {
+  .form__input {
+    font-size: 12px;
+    border: 2px solid black;
+  }
+  .contact__formItem > textarea {
+
+    min-height: 15vh;
+  }
+  .contact__mainTitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .contact__formRow {
+    
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact__formItem > textarea {
+    width: 111%;
+   margin-left: -3%;
+  }
+  .contact__mainTitle {
+    font-size: 18px;
+  }
+  .contact__btn {
+    font-size: 10px;
+  }
+  .contact__body {
+    flex: 0 1 70%;
+  }
+  
 }
