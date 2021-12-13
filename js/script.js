@@ -114,30 +114,7 @@ $(".header__logo a").on("click", function () {
     });
   });
 
-  // Tabs old version
-  /*document.querySelectorAll(".tabs__triggerItem").forEach((item) =>
-    item.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      const id = e.target.getAttribute("href").replace("#", "");
-
-      document
-        .querySelectorAll(".tabs__triggerItem")
-        .forEach((child) =>
-          child.classList.remove("tabs__triggerItem--active")
-        );
-
-      document
-        .querySelectorAll(".tabs__contentItem")
-        .forEach((child) =>
-          child.classList.remove("tabs__contentItem--active")
-        );
-
-      item.classList.add("tabs__triggerItem--active");
-      document.getElementById(id).classList.add("tabs__contentItem--active");
-    })
-  );
-  */
+ 
 
   //tabs
 
@@ -221,62 +198,7 @@ $(".header__logo a").on("click", function () {
 
 
 
-  //words cloud
-  var text = 'ужну,вступ,ужну Ужгород,ужну вступ,інформаційні технології,програміст,вступна кампанія,університет програмування,c#,системний аналіз,вступ 2021,Ужгород,c# курси,java,programmer,програмування курси,математика,математика університет,javascript,робототехніка,аналіз даних,programming,coding,логічне мислення,вища освіта математика,спеціальність 124,математична логіка,Artificial Intelligence,штучний інтелект,математичний факультет';
-
-  function changeChartHeight(){
-      var width = screen.width;
-      var height = screen.height;
-      if (width>=700 && width <= 2000){
-          return '15%';
-      }
-      if (width > 500 && width < 700) {
-          return '40%'
-      } if (width <= 500) {
-          return '100%';
-      }
-  }
-  var lines = text.split(',');
-  var data = Highcharts.reduce(lines, function (arr, word) {
-          var obj = Highcharts.find(arr, function (obj) {
-              return obj.name === word;
-          });
-          if (obj) {
-              obj.weight += 1;
-          } else {
-              obj = {
-                  name: word,
-                  weight: 1
-              };
-              arr.push(obj);
-          }
-          return arr;
-      }, []);
-  
-  Highcharts.chart('container', {
-      series: [{
-          type: 'wordcloud',
-          data: data,
-         
-      }],
-      title: {
-          text: '',
-          
-      },
-      chart: {
-          backgroundColor: '#00000',
-          height: changeChartHeight(),
-          
-      },
-      tooltip: { enabled: false },
-     
-      // labels: {
-      //     style: {
-      //         fontSize: '5px'
-      //     }
-      // }
-     
-  });
+ 
  
   // Particles Config
   particlesJS(
