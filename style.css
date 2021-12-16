@@ -1980,7 +1980,7 @@ body {
   height: 100%;
   /* background: rgb(238, 177, 177); */
   transition: 1s ;
-  z-index: 10000000000;
+  z-index: 100;
 }
 .preloader::before{
   content :"";
@@ -2023,6 +2023,7 @@ body {
   box-sizing: border-box;
   border: 3px solid #ffffff;
   animation: animate 2s linear infinite;
+  z-index:1000000;
 }
 
 .loader::before{
