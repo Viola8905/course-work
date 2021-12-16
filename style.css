@@ -1390,24 +1390,24 @@ body {
  
 }
 @media screen and (max-width: 420px) {
-  /* .slider__itemBody{
+   .slider__itemBody{
    
     margin: 0 10% 0 16% ;
-  } */
+  } 
   .main-slider {
     background-color: #000000;
     padding: 10% 0 10% 0;
   }
 }
 @media screen and (max-width: 380px) {
-  /* .slider__itemBody{
+   .slider__itemBody{
     margin: 0 10% 0 13% ;
-  } */
+  } 
 }
 @media screen and (max-width: 370px) {
-  /* .slider__itemBody{
+   .slider__itemBody{
     margin: 0 10% 0 10% ;
-  } */
+  } 
 }
 @media screen and (max-width: 330px) {
   .slider__itemBody{
