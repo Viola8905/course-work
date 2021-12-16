@@ -1,4 +1,9 @@
 "use strict";
+//preloader
+   $(window).on('load',function(){
+     $('.preloader').addClass('complete')
+   })
+
 
 //for page header
 
