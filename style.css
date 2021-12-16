@@ -1980,7 +1980,7 @@ body {
   height: 100%;
   /* background: rgb(238, 177, 177); */
   transition: 1s ;
-  z-index: 1000;
+  z-index: 10000;
 }
 .preloader::before{
   content :"";
