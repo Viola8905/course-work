@@ -755,6 +755,15 @@ body {
   padding: 2% 0;
   letter-spacing: 1px;
 }
+.prog__txt1 a{
+   color: white;
+}
+.prog__txt2 a{
+  color: white;
+}
+.prog__txt3 a{
+  color: white;
+}
 .prog__txt2 {
   font-size: 17px;
   border: 3px solid #b9dfdf;
@@ -2149,6 +2158,9 @@ body {
   .footer_facebook {
     margin-top: 0;
   }
+  .footer_body{
+    margin-top: 10%;
+  }
 
 }
 @media screen and (max-width: 380px) {
@@ -2195,6 +2207,7 @@ body {
   .footer_creators{
     margin-top: 10%;
   }
+  
 
 }
 
