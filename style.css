@@ -2231,6 +2231,16 @@ body {
   pointer-events: none;
 }
 
+.main-googleForm {
+  margin: 0 auto;
+}
+
+.google-formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes animate {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
