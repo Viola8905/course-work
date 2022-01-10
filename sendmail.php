@@ -16,7 +16,7 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
 
-$address = 'artemvolsh@gmail.com';
+$address = 'appliedmathuzhnu@gmail.com';
 $name = $_POST['name2'];
 $surname = $_POST['surname'];
 $email = $_POST['email'];
@@ -41,9 +41,9 @@ $mail->Password = 'a4f5773b98dd08';
 // $mail->Password = 's5fWjRus497jU7x';
 // $mail->Port = 587;
 
-$mail->From = $email;
+$mail->From = $address;
 
-$mail->addAddress($address, $name);
+$mail->addAddress($email, $name);
 
 $mail->isHTML(true);
 $mail->Subject = 'Client question';
