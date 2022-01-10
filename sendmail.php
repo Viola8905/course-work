@@ -78,4 +78,4 @@ try {
 echo json_encode([
 	'status' => 'success',
 	'message' => $message
-]);
+]); 
