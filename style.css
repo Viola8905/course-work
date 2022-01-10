@@ -1649,9 +1649,7 @@ body {
   transition: ease 0.15s;
 }
 
-.form__item ._error {
-  box-shadow: 0 0 5px 0px red;
-}
+
 
 .form__input::placeholder {
   font-weight: bold;
@@ -1723,13 +1721,19 @@ body {
 }
 .contact__contactForm {
 }
-.contact__form {
+.contact__formItem input::placeholder {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 .contact__formWrapper {
   display: flex;
   flex-direction: column;
 }
 .contact__formBody {
+}
+
+._error {
+  box-shadow: 0 0 5px 0px red;
 }
 .contact__formRow {
   display: flex;
@@ -1794,6 +1798,7 @@ body {
 }
 .contact__btn {
   color: white;
+  background: black;
   letter-spacing: 2px;
   font-size: 16px;
 }
